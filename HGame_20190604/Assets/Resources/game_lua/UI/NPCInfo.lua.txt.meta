@@ -3,5 +3,5 @@ guid: 4dc08eb73f08abe43b6fd0b0bd3334ab
 TextScriptImporter:
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: game_lua/ui/npcinfo.lua.data
   assetBundleVariant: 

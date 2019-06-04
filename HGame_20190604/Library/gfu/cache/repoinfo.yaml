@@ -14,8 +14,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-06-04T14:27:28.632+08:00
-  initializedAtString: 2019-06-04T14:27:28.632+08:00
+  lastUpdatedAtString: 2019-06-04T16:04:15.249+08:00
+  initializedAtString: 2019-06-04T16:04:15.249+08:00
   currentGitRemote:
     name: main
     url: git@github.com:ziyuelove/Unity_SemiPro_20190604.git

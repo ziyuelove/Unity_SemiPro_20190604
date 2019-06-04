@@ -3,5 +3,5 @@ guid: 1051b82b9f478c4459ba12620a506570
 TextScriptImporter:
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: game_lua/ui/selecttimepage.lua.data
   assetBundleVariant: 

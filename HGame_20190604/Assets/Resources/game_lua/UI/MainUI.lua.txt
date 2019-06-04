@@ -30,6 +30,7 @@ function MainUI:Start(gameobject)
 	local Btn_role = self.gameobect.transform:Find("rightBtn/btn_role") 
 	local Btn_item = self.gameobect.transform:Find("rightBtn/btn_item") 
 	local Btn_npc = self.gameobect.transform:Find("rightBtn/btn_npc");
+	local Btn_sys = self.gameobect.transform:Find("rightBtn/btn_sys");
 
 	self.GameTimeLabel = self.gameobect.transform:Find("topright/gametime/Text"):GetComponent("Text");
 
@@ -44,6 +45,9 @@ function MainUI:Start(gameobject)
 
 	EventTriggerListener.Get(Btn_npc.gameObject).OnClickCall = "OnOpenNPC";
 	EventTriggerListener.Get(Btn_npc.gameObject):OnSetLuaTable(self.LuaTable);
+
+	EventTriggerListener.Get(Btn_sys.gameObject).OnClickCall = "OnOpenSys";
+	EventTriggerListener.Get(Btn_sys.gameObject):OnSetLuaTable(self.LuaTable);
 
 
 	self.GameTimeLabel.text = GameTimeManeger.GetCurTimeName();
@@ -69,6 +73,11 @@ end
 function MainUI:OnOpenNPC(gameobject)
 	game.OpenUI("UI/NPCInfo");
 	return gameobject;	
+end
+
+function MainUI:OnOpenSys(gameobject)
+	gameRecord.Encode();
+	return gameobject
 end
 
 function MainUI:Update()

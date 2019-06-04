@@ -236,7 +236,7 @@ public class PolyNav2DWrap
 		try
 		{
 			ToLua.CheckArgsCount(L, 0);
-			PolyNav2D.CreatePolyNav2D();
+			//PolyNav2D.CreatePolyNav2D();
 			return 0;
 		}
 		catch (Exception e)

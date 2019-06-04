@@ -1,0 +1,19 @@
+Win64
+PlayerPath?
+F:/Unity_SemiPro_20190604/HGame_20190604/Assets/StreamingAssets/Win/scene/scene_3.unity3d
+SceneListBegin?
+Assets/Resources/Scene/scene_3.unity
+SceneListEnd?
+32f1d87db6a1d7ab5f5812e9c2ce4cb5 UnityEngine.UI.dll:UnityEngine.UI.CanvasScaler
+3d0176623e9358f9dea9b3e2ccdc615f UnityEngine.UI.dll:UnityEngine.EventSystems.EventSystem
+c43a21a3a361915638ae651920bf915d UnityEngine.UI.dll:UnityEngine.UI.GraphicRaycaster
+a4c743a6c73824fd0176c8a41a277ef6 UnityEngine.UI.dll:UnityEngine.EventSystems.StandaloneInputModule
+56364b770e032734d1ac59ace1f8503d Assembly-CSharp.dll:.PolyNavObstacle
+2625971ff300868eececa61f111fb820 Assembly-CSharp.dll:Cinemachine.CinemachineFramingTransposer
+caf15a6fbebd7f05cdf1159d14f7037c Assembly-CSharp.dll:.PolyNav2D
+3e402a8de2e3e8efd4a4b53fe4a24c72 Assembly-CSharp.dll:Cinemachine.CinemachinePipeline
+82ee7bf42b260742ed6af7bbdfd77826 Assembly-CSharp.dll:Cinemachine.CinemachineConfiner
+5dfbe68774eecb893204b4cb6309b225 Assembly-CSharp.dll:Cinemachine.CinemachineVirtualCamera
+3e402a8de2e3e8efd4a4b53fe4a24c72 Assembly-CSharp.dll:.transformInt
+7f0b3ded884986de68e6b7d5c7d9f4b6 Assembly-CSharp.dll:.SceneChangeRgn
+2c5564e1cce3319288e6282c8088a450 Assembly-CSharp.dll:Cinemachine.CinemachineBrain

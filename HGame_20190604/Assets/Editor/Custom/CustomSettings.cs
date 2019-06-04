@@ -7,7 +7,6 @@ using Spine.Unity;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Cinemachine;
-using UnityEngine.Tilemaps;
 
 using BindType = ToLuaMenu.BindType;
 using System.Reflection;
@@ -128,7 +127,7 @@ public static class CustomSettings
         _GT(typeof(Space)),
 
 
-        _GT(typeof(MeshRenderer)),
+        //_GT(typeof(MeshRenderer)),
 #if !UNITY_5_4_OR_NEWER
         _GT(typeof(ParticleEmitter)),
         _GT(typeof(ParticleRenderer)),
@@ -179,8 +178,6 @@ public static class CustomSettings
         _GT(typeof(PolyNav2D)),
         _GT(typeof(SceneChangeRgn)),
         _GT(typeof(ScrollViewEventTrigger)),
-        _GT(typeof(Tilemap)),
-        _GT(typeof(TileBase)),
     };
 
     public static List<Type> dynamicList = new List<Type>()

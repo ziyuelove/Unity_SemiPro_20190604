@@ -43,6 +43,7 @@ public class LuaManager : MonoBehaviour
         luaState = new LuaState();//LuaClient.GetMainState();
         OnLog("Bind");
         Bind();
+        OpenCJson();
         OnLog("luaState.Start");
         luaState.Start();
         //luaScripteMgr.Start();
@@ -89,6 +90,17 @@ public class LuaManager : MonoBehaviour
             //luaState.Require(item);
         }
         
+    }
+
+    //cjson 比较特殊，只new了一个table，没有注册库，这里注册一下
+    protected void OpenCJson()
+    {
+        luaState.LuaGetField(LuaIndexes.LUA_REGISTRYINDEX, "_LOADED");
+        luaState.OpenLibs(LuaDLL.luaopen_cjson);
+        luaState.LuaSetField(-2, "cjson");
+
+        luaState.OpenLibs(LuaDLL.luaopen_cjson_safe);
+        luaState.LuaSetField(-2, "cjson.safe");
     }
 
     public void CallLuaFunction(string name)

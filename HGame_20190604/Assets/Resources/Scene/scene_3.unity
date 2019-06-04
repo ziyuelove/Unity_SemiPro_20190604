@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -177,6 +178,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -476,6 +478,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 285098900}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: fc4f7f33d8fc7c0419b2308165807ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -541,6 +544,77 @@ Transform:
   m_Father: {fileID: 1141657222}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &341579119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 341579121}
+  - component: {fileID: 341579120}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &341579120
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341579119}
+  m_Enabled: 1
+  serializedVersion: 9
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &341579121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341579119}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 266.0333, y: 177.45695, z: -198.89046}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &369965581
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,6 +642,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 369965581}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -585,6 +660,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 369965581}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -644,6 +720,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 424114798}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: d825a5ad4817c0b4fbf21ab45736b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -732,6 +809,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 506004764}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -771,6 +849,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 506004764}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -831,6 +910,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -11640,6 +11720,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 865584986}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: fc4f7f33d8fc7c0419b2308165807ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -11755,6 +11836,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1141657219}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: 2f01b895e078212419b3a7c52085d19e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -11858,6 +11940,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1272637654}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: fc4f7f33d8fc7c0419b2308165807ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -11970,6 +12053,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -21188,6 +21272,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -23026,6 +23111,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -23120,6 +23206,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -24982,6 +25069,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1584042527}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -25013,6 +25101,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1584042527}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: 4f2aa3ca709c3c64b9e418f8ea7c5d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -25044,6 +25133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1881011659}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -25061,6 +25151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1881011659}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -25171,6 +25262,7 @@ TilemapRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -28694,6 +28786,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2109922433}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 11500000, guid: d825a5ad4817c0b4fbf21ab45736b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -28768,6 +28861,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2136071659}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -28787,6 +28881,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2136071659}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

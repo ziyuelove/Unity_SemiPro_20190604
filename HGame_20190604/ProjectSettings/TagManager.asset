@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - room
+  - path
+  - weilan
+  - louti
+  - build
+  - npc
+  - changeRgn
+  - soldier
+  - chest
+  - collection
+  - resetTime
   layers:
   - Default
   - TransparentFX
@@ -13,12 +24,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - collider
+  - npc
+  - build
+  - chest
+  - collection
+  - reset_time
   - 
   - 
   - 
@@ -40,4 +51,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1529306019
     locked: 0

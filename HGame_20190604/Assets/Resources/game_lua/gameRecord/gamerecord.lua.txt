@@ -1,0 +1,20 @@
+﻿--------游戏数据记录---------
+local json = require 'cjson' 
+gameRecord = {}
+function gameRecord.Encode()
+	local intDatas = {};
+	local CurSceneName = Game.GetGame():GetCurActiveScene();
+	intDatas["scene"] =CurSceneName;
+	intDatas["pos_x"] = game.hero.transform.position.x;
+	intDatas["pos_y"] = game.hero.transform.position.y;
+	local jsonStr = json.encode(intDatas);
+	print(jsonStr)
+	return jsonStr;
+end
+
+function gameRecord.Decode(jsonStr)
+	local recorfScene = jsonStr["scene"];
+	local HeroPos = Vector2.New(jsonStr["pos_x"],jsonStr["pos_y"]); 
+end
+
+return gameRecord

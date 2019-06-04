@@ -20,6 +20,7 @@ public class ResourceManager {
     Dictionary<string, GameObject> Dic_GameObjectRes = new Dictionary<string, GameObject>();  //原始资源文件
     Dictionary<string, TextAsset> Dic_TextAssetRes = new Dictionary<string, TextAsset>();  //原始资源文件
     Dictionary<string, Sprite> Dic_SpriteRendererRes = new Dictionary<string, Sprite>();  //原始资源文件
+    Dictionary<string, AssetBundle> Dic_SceneRes = new Dictionary<string, AssetBundle>();  //场景资源文件
     Dictionary<string, int> Dic_DependsRes = new Dictionary<string, int>();    //依赖文件列表
     /// </summary>
     /// <returns></returns>
@@ -255,24 +256,32 @@ public class ResourceManager {
         AssetBundleCreateRequest request = null;
         if (bLoadFromStream)
         {
-            string strPath = "scene/" + strSceneName;
-            string[] cubedepends = manifest.GetAllDependencies(strPath + ".unity3d");
-            AssetBundle[] dependsAssetbundle = new AssetBundle[cubedepends.Length];
-
-            for (int index = 0; index < cubedepends.Length; index++)
+            if (!Dic_SceneRes.ContainsKey(strSceneName))
             {
-                //加载所有的依赖文件;
-                if (!Dic_DependsRes.ContainsKey(cubedepends[index]))
-                {
-                    dependsAssetbundle[index] = AssetBundle.LoadFromFile(GetResPath() + CurPlatform + cubedepends[index]);
-                    Dic_DependsRes.Add(cubedepends[index], 1);
-                }
-            }
+                string strPath = "scene/" + strSceneName;
+                string[] cubedepends = manifest.GetAllDependencies(strPath + ".unity3d");
+                AssetBundle[] dependsAssetbundle = new AssetBundle[cubedepends.Length];
 
-            request = AssetBundle.LoadFromFileAsync(GetResPath() + CurPlatform + "/scene/" + strSceneName + ".unity3d");
-            yield return request;
-            var bundle = request.assetBundle;
-            SceneManager.LoadScene(strSceneName);
+                for (int index = 0; index < cubedepends.Length; index++)
+                {
+                    //加载所有的依赖文件;
+                    if (!Dic_DependsRes.ContainsKey(cubedepends[index]))
+                    {
+                        dependsAssetbundle[index] = AssetBundle.LoadFromFile(GetResPath() + CurPlatform + cubedepends[index]);
+                        Dic_DependsRes.Add(cubedepends[index], 1);
+                    }
+                }
+
+                request = AssetBundle.LoadFromFileAsync(GetResPath() + CurPlatform + "/scene/" + strSceneName + ".unity3d");
+                yield return request;
+                var bundle = request.assetBundle;
+                SceneManager.LoadScene(strSceneName);
+                Dic_SceneRes.Add(strSceneName, bundle);
+            }
+            else
+            {
+                SceneManager.LoadScene(strSceneName);
+            }
             Debug.Log("切换场景成功!!!!");
         }
         else

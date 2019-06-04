@@ -69,8 +69,6 @@ public static class LuaBinder
 		UnityEngine_SpriteWrap.Register(L);
 		UnityEngine_SpriteRendererWrap.Register(L);
 		UnityEngine_AudioBehaviourWrap.Register(L);
-		UnityEngine_GridLayoutWrap.Register(L);
-		UnityEngine_ScriptableObjectWrap.Register(L);
 		L.BeginModule("UI");
 		UnityEngine_UI_ButtonWrap.Register(L);
 		UnityEngine_UI_ImageWrap.Register(L);
@@ -82,10 +80,6 @@ public static class LuaBinder
 		L.BeginModule("EventSystems");
 		UnityEngine_EventSystems_EventSystemWrap.Register(L);
 		UnityEngine_EventSystems_UIBehaviourWrap.Register(L);
-		L.EndModule();
-		L.BeginModule("Tilemaps");
-		UnityEngine_Tilemaps_TilemapWrap.Register(L);
-		UnityEngine_Tilemaps_TileBaseWrap.Register(L);
 		L.EndModule();
 		L.BeginModule("Events");
 		L.RegFunction("UnityAction", UnityEngine_Events_UnityAction);
@@ -151,7 +145,6 @@ public static class LuaBinder
 		L.EndModule();
 		L.EndModule();
 		L.BeginPreLoad();
-		L.AddPreLoad("UnityEngine.MeshRenderer", LuaOpen_UnityEngine_MeshRenderer, typeof(UnityEngine.MeshRenderer));
 		L.AddPreLoad("UnityEngine.BoxCollider", LuaOpen_UnityEngine_BoxCollider, typeof(UnityEngine.BoxCollider));
 		L.AddPreLoad("UnityEngine.MeshCollider", LuaOpen_UnityEngine_MeshCollider, typeof(UnityEngine.MeshCollider));
 		L.AddPreLoad("UnityEngine.SphereCollider", LuaOpen_UnityEngine_SphereCollider, typeof(UnityEngine.SphereCollider));
@@ -915,24 +908,6 @@ public static class LuaBinder
 				Delegate arg1 = DelegateTraits<EventTriggerListener.VoidDelegate>.Create(func, self);
 				ToLua.Push(L, arg1);
 			}
-			return 1;
-		}
-		catch(Exception e)
-		{
-			return LuaDLL.toluaL_exception(L, e);
-		}
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int LuaOpen_UnityEngine_MeshRenderer(IntPtr L)
-	{
-		try
-		{
-			LuaState state = LuaState.Get(L);
-			state.BeginPreModule("UnityEngine");
-			UnityEngine_MeshRendererWrap.Register(state);
-			int reference = state.GetMetaReference(typeof(UnityEngine.MeshRenderer));
-			state.EndPreModule(L, reference);
 			return 1;
 		}
 		catch(Exception e)
