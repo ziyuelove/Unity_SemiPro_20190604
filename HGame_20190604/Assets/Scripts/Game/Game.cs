@@ -39,7 +39,7 @@ public class Game : MonoBehaviour
 
     public void ChangeRgn(string strSceneName)
     {
-        SceneManager.LoadScene(strSceneName);
+        SceneManager.LoadSceneAsync(strSceneName);
     }
 
     void OnLevelWasLoaded(int level)
@@ -51,7 +51,6 @@ public class Game : MonoBehaviour
 
     public void LoadScene(string strSceneName)
     {
-
         if (ResourceManager.GetInstance().bLoadFromStream)
             StartCoroutine(ResourceManager.GetInstance().LoadScene(strSceneName));
         else
