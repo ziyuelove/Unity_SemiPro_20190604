@@ -1,0 +1,203 @@
+﻿
+--角色任务控制逻辑 
+questmaneger = {}
+
+questmaneger.questlist = {};
+
+questmaneger.complatedquestlist = {};
+
+function questmaneger.add(id)
+	if questmaneger.findQuest(id) == nil then
+		local newquest = Quest:New(id);
+		table.insert (questmaneger.questlist,newquest);
+		print("添加任务:"..id);
+	end
+end
+
+function questmaneger.del(id)
+	local pos = 1;
+	for key, value in pairs(questmaneger.questlist) do   
+		if value.id == id then
+			table.remove (questmaneger.questlist, pos);
+			print("删除任务:"..id);
+			return;
+		end
+		pos = pos + 1;
+	end 
+end
+
+function questmaneger.refreshquest(questid,type,target,re_value)
+	print("刷新任务进程:"..questid.."   "..re_value);
+	local quest = questmaneger.findQuest(questid);
+	if quest ~= nil then
+		for key, value in pairs(quest.conditions) do 
+			if value.type == type and value.target == target then
+				if type == 1 then
+					value.curValue = re_value;
+				else
+					value.curValue = value.curValue + re_value;
+					if value.curValue < 0 then
+						value.curValue = 0;
+					end
+				end
+			end
+			--if value ~= nil then
+				--print("刷新任务进程......:"..value.type.."    "..value.target.." "..value.value.."="..value.curValue);
+			--end
+		end
+		quest:refreshComplated();
+
+		if quest.Complated then
+			print("完成任务:"..questid);
+		end
+	end
+end
+
+--刷新玩家身上所有需要该条件的任务
+function questmaneger.refreshAllquest(type,target,re_value)
+	for key, value in pairs(questmaneger.questlist) do   
+		questmaneger.refreshquest(value.id,type,target,re_value);
+	end 
+end
+
+function questmaneger.complateQuest(questid)
+	local Questdata = questmaneger.findQuest(questid)
+	local quest_config = questmaneger.findQuestFormConfig(questid)
+	if Questdata~=nil then
+		if Questdata.Complated then
+			table.insert (questmaneger.complatedquestlist,questid);
+			questmaneger.del(questid);
+			if quest_config.nextQuest ~= nil and quest_config.nextQuest ~=0 then
+				questmaneger.add(quest_config.nextQuest);
+			end
+			--删除任务条件所需的道具
+			if quest_config.conditions ~=nil then
+				for key, value in pairs(quest_config.conditions) do   
+					if value.type == 2 then
+						itemmaneger.delItem(value.target,value.value);
+					end
+				end
+			end
+
+			questmaneger.onQuestEvent(questid);
+		end
+	end
+end
+
+--强制完成一个任务（不判断是否完成）
+function questmaneger.ForceComplateQuest(questid)
+	local Questdata = questmaneger.findQuest(questid)
+	local quest_config = questmaneger.findQuestFormConfig(questid)
+	if Questdata~=nil then
+		--if Questdata.Complated then
+			table.insert (questmaneger.complatedquestlist,questid);
+			questmaneger.del(questid);
+			if quest_config.nextQuest ~= nil and quest_config.nextQuest ~=0 then
+				questmaneger.add(quest_config.nextQuest);
+			end
+			--删除任务条件所需的道具
+			if quest_config.conditions ~=nil then
+				for key, value in pairs(quest_config.conditions) do   
+					if value.type == 2 then
+						itemmaneger.delItem(value.target,value.value);
+					end
+				end
+			end
+
+			questmaneger.onQuestEvent(questid);
+		--end
+	end
+end
+
+function questmaneger.onQuestEvent(questid)
+	local quest_config = questmaneger.findQuestFormConfig(questid);
+	if quest_config.GiveList~=nil then
+		for key, value in pairs(quest_config.GiveList) do   
+			for i=1,value.num do
+				itemmaneger.addItem(value.id);
+			end
+			GetItemPage.Additem(value.id,value.num)
+		end 
+		GetItemPage.StartShow();
+	end
+end
+
+
+--检查一个任务是否已完成
+function questmaneger.iscomplatedquest(id)
+	for key, value in pairs(questmaneger.complatedquestlist) do   
+		if value == id then
+			return true;
+		end
+	end 
+	return false;
+end
+
+function questmaneger.showQuest()
+	for key, value in pairs(questmaneger.questlist) do   
+		print("_______________________________________:"..value.id);
+	end 
+end
+
+function questmaneger.getQuestNum()
+	local _length = 0;
+	for key, value in pairs(questmaneger.questlist) do   
+		_length = _length + 1;
+	end 
+	return _length;
+end
+
+function questmaneger.findQuest(id)
+	for key, value in pairs(questmaneger.questlist) do   
+		if value.id == id then
+			return value;
+		end
+	end 
+	return nil;
+end
+
+function questmaneger.findQuestFormConfig(id)
+	for key, value in pairs(questList) do   
+		if value.id == id then
+			return value;
+		end
+	end 
+	return nil;
+end
+
+--检查一个NPC身上是否有当前玩家可以接取的任务
+function questmaneger.GetQuestForNPC(npcid)
+	local npcData = sceneNpcManager.GetNpcTalkConfigData(npcid);
+	if npcData~=nil then
+		for key, value in pairs(npcData.QuestList) do   
+			if not questmaneger.iscomplatedquest(value) then
+				local questdata = questmaneger.findQuestFormConfig(value);
+				if questdata.preQuest == 0 or questmaneger.iscomplatedquest(questdata.preQuest) or questmaneger.findQuest(value)~=nil then
+					return value;
+				end			
+			end
+		end 
+	end
+	return 0;
+end
+
+--检查一个NPC身上所有当前玩家可以接取或对话的任务
+function questmaneger.GetQuestForNPC(npcid)
+	local tempQuestlist = {};
+	local npcData = sceneNpcManager.GetNpcTalkConfigData(npcid);
+	if npcData~=nil then
+		for key, value in pairs(npcData.QuestList) do   
+			if not questmaneger.iscomplatedquest(value) then
+				local questdata = questmaneger.findQuestFormConfig(value);
+				if questdata.preQuest == 0 or questmaneger.iscomplatedquest(questdata.preQuest) or questmaneger.findQuest(value)~=nil then
+					--return value;
+					table.insert (tempQuestlist,value);
+				end			
+			end
+		end 
+	end
+	return tempQuestlist;
+end
+
+
+return questmaneger

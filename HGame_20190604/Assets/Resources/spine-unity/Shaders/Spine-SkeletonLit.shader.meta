@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: b11070221b7bf954489a255d35680e1e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: spine-unity/shaders/spine-skeletonlit.data
+  assetBundleVariant: 

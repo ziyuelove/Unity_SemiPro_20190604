@@ -1,0 +1,65 @@
+﻿--用于管理场景上的NPC
+
+sceneBuildManager = {}
+sceneBuildManager.buildlist = {};
+
+function sceneBuildManager.Init()
+	local mainBuild = sceneBuildManager.CreateBuild(0);
+	sceneNpcManager.CreateNpc(5,mainBuild);
+end
+
+function sceneBuildManager.GetBuildByType(buildType)
+	for key, value in pairs(sceneBuildManager.buildlist) do   
+		if value.type == buildType then
+			return value;
+		end
+	end 
+	return nil;
+end
+
+--创建一个新的建筑
+function sceneBuildManager.CreateBuild(type)
+	local newBulid = Build:New(type);
+	newBulid:Init();
+	table.insert (sceneBuildManager.buildlist,newBulid);
+	return newBulid;
+end
+
+function sceneBuildManager.GetBuild(id)
+	for key, value in pairs(sceneBuildManager.buildlist) do   
+		if value.id == id then
+			return value;
+		end
+	end 
+	return nil;
+end
+
+function sceneBuildManager.LoadBuildBase(type)
+	for key, value in pairs(BuildListConfig) do   
+		if value.type == type then
+			return value;
+		end
+	end 
+	return nil;
+end
+
+function sceneBuildManager.Update()
+	for key, value in pairs(sceneBuildManager.buildlist) do   
+		value:Update();
+	end 
+end
+
+function sceneBuildManager.GetBuildByWorkBuild(workType)
+	for key, value in pairs(sceneBuildManager.buildlist) do   
+		if value.workMan ~= 1 then
+			local buildConfig = sceneBuildManager.LoadBuildBase(value.type);
+			if buildConfig~=nil then
+				if buildConfig.workType == workType then
+					return value;
+				end
+			end
+		end
+	end 	
+	return nil;
+end
+

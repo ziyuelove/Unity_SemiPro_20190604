@@ -1,0 +1,6403 @@
+fileFormatVersion: 2
+guid: cdaf17eb411e223408d058d2a3e05999
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: tilea2_0
+  - first:
+      213: 21300002
+    second: tilea2_1
+  - first:
+      213: 21300004
+    second: tilea2_2
+  - first:
+      213: 21300006
+    second: tilea2_3
+  - first:
+      213: 21300008
+    second: tilea2_4
+  - first:
+      213: 21300010
+    second: tilea2_5
+  - first:
+      213: 21300012
+    second: tilea2_6
+  - first:
+      213: 21300014
+    second: tilea2_7
+  - first:
+      213: 21300016
+    second: tilea2_8
+  - first:
+      213: 21300018
+    second: tilea2_9
+  - first:
+      213: 21300020
+    second: tilea2_10
+  - first:
+      213: 21300022
+    second: tilea2_11
+  - first:
+      213: 21300024
+    second: tilea2_12
+  - first:
+      213: 21300026
+    second: tilea2_13
+  - first:
+      213: 21300028
+    second: tilea2_14
+  - first:
+      213: 21300030
+    second: tilea2_15
+  - first:
+      213: 21300032
+    second: tilea2_16
+  - first:
+      213: 21300034
+    second: tilea2_17
+  - first:
+      213: 21300036
+    second: tilea2_18
+  - first:
+      213: 21300038
+    second: tilea2_19
+  - first:
+      213: 21300040
+    second: tilea2_20
+  - first:
+      213: 21300042
+    second: tilea2_21
+  - first:
+      213: 21300044
+    second: tilea2_22
+  - first:
+      213: 21300046
+    second: tilea2_23
+  - first:
+      213: 21300048
+    second: tilea2_24
+  - first:
+      213: 21300050
+    second: tilea2_25
+  - first:
+      213: 21300052
+    second: tilea2_26
+  - first:
+      213: 21300054
+    second: tilea2_27
+  - first:
+      213: 21300056
+    second: tilea2_28
+  - first:
+      213: 21300058
+    second: tilea2_29
+  - first:
+      213: 21300060
+    second: tilea2_30
+  - first:
+      213: 21300062
+    second: tilea2_31
+  - first:
+      213: 21300064
+    second: tilea2_32
+  - first:
+      213: 21300066
+    second: tilea2_33
+  - first:
+      213: 21300068
+    second: tilea2_34
+  - first:
+      213: 21300070
+    second: tilea2_35
+  - first:
+      213: 21300072
+    second: tilea2_36
+  - first:
+      213: 21300074
+    second: tilea2_37
+  - first:
+      213: 21300076
+    second: tilea2_38
+  - first:
+      213: 21300078
+    second: tilea2_39
+  - first:
+      213: 21300080
+    second: tilea2_40
+  - first:
+      213: 21300082
+    second: tilea2_41
+  - first:
+      213: 21300084
+    second: tilea2_42
+  - first:
+      213: 21300086
+    second: tilea2_43
+  - first:
+      213: 21300088
+    second: tilea2_44
+  - first:
+      213: 21300090
+    second: tilea2_45
+  - first:
+      213: 21300092
+    second: tilea2_46
+  - first:
+      213: 21300094
+    second: tilea2_47
+  - first:
+      213: 21300096
+    second: tilea2_48
+  - first:
+      213: 21300098
+    second: tilea2_49
+  - first:
+      213: 21300100
+    second: tilea2_50
+  - first:
+      213: 21300102
+    second: tilea2_51
+  - first:
+      213: 21300104
+    second: tilea2_52
+  - first:
+      213: 21300106
+    second: tilea2_53
+  - first:
+      213: 21300108
+    second: tilea2_54
+  - first:
+      213: 21300110
+    second: tilea2_55
+  - first:
+      213: 21300112
+    second: tilea2_56
+  - first:
+      213: 21300114
+    second: tilea2_57
+  - first:
+      213: 21300116
+    second: tilea2_58
+  - first:
+      213: 21300118
+    second: tilea2_59
+  - first:
+      213: 21300120
+    second: tilea2_60
+  - first:
+      213: 21300122
+    second: tilea2_61
+  - first:
+      213: 21300124
+    second: tilea2_62
+  - first:
+      213: 21300126
+    second: tilea2_63
+  - first:
+      213: 21300128
+    second: tilea2_64
+  - first:
+      213: 21300130
+    second: tilea2_65
+  - first:
+      213: 21300132
+    second: tilea2_66
+  - first:
+      213: 21300134
+    second: tilea2_67
+  - first:
+      213: 21300136
+    second: tilea2_68
+  - first:
+      213: 21300138
+    second: tilea2_69
+  - first:
+      213: 21300140
+    second: tilea2_70
+  - first:
+      213: 21300142
+    second: tilea2_71
+  - first:
+      213: 21300144
+    second: tilea2_72
+  - first:
+      213: 21300146
+    second: tilea2_73
+  - first:
+      213: 21300148
+    second: tilea2_74
+  - first:
+      213: 21300150
+    second: tilea2_75
+  - first:
+      213: 21300152
+    second: tilea2_76
+  - first:
+      213: 21300154
+    second: tilea2_77
+  - first:
+      213: 21300156
+    second: tilea2_78
+  - first:
+      213: 21300158
+    second: tilea2_79
+  - first:
+      213: 21300160
+    second: tilea2_80
+  - first:
+      213: 21300162
+    second: tilea2_81
+  - first:
+      213: 21300164
+    second: tilea2_82
+  - first:
+      213: 21300166
+    second: tilea2_83
+  - first:
+      213: 21300168
+    second: tilea2_84
+  - first:
+      213: 21300170
+    second: tilea2_85
+  - first:
+      213: 21300172
+    second: tilea2_86
+  - first:
+      213: 21300174
+    second: tilea2_87
+  - first:
+      213: 21300176
+    second: tilea2_88
+  - first:
+      213: 21300178
+    second: tilea2_89
+  - first:
+      213: 21300180
+    second: tilea2_90
+  - first:
+      213: 21300182
+    second: tilea2_91
+  - first:
+      213: 21300184
+    second: tilea2_92
+  - first:
+      213: 21300186
+    second: tilea2_93
+  - first:
+      213: 21300188
+    second: tilea2_94
+  - first:
+      213: 21300190
+    second: tilea2_95
+  - first:
+      213: 21300192
+    second: tilea2_96
+  - first:
+      213: 21300194
+    second: tilea2_97
+  - first:
+      213: 21300196
+    second: tilea2_98
+  - first:
+      213: 21300198
+    second: tilea2_99
+  - first:
+      213: 21300200
+    second: tilea2_100
+  - first:
+      213: 21300202
+    second: tilea2_101
+  - first:
+      213: 21300204
+    second: tilea2_102
+  - first:
+      213: 21300206
+    second: tilea2_103
+  - first:
+      213: 21300208
+    second: tilea2_104
+  - first:
+      213: 21300210
+    second: tilea2_105
+  - first:
+      213: 21300212
+    second: tilea2_106
+  - first:
+      213: 21300214
+    second: tilea2_107
+  - first:
+      213: 21300216
+    second: tilea2_108
+  - first:
+      213: 21300218
+    second: tilea2_109
+  - first:
+      213: 21300220
+    second: tilea2_110
+  - first:
+      213: 21300222
+    second: tilea2_111
+  - first:
+      213: 21300224
+    second: tilea2_112
+  - first:
+      213: 21300226
+    second: tilea2_113
+  - first:
+      213: 21300228
+    second: tilea2_114
+  - first:
+      213: 21300230
+    second: tilea2_115
+  - first:
+      213: 21300232
+    second: tilea2_116
+  - first:
+      213: 21300234
+    second: tilea2_117
+  - first:
+      213: 21300236
+    second: tilea2_118
+  - first:
+      213: 21300238
+    second: tilea2_119
+  - first:
+      213: 21300240
+    second: tilea2_120
+  - first:
+      213: 21300242
+    second: tilea2_121
+  - first:
+      213: 21300244
+    second: tilea2_122
+  - first:
+      213: 21300246
+    second: tilea2_123
+  - first:
+      213: 21300248
+    second: tilea2_124
+  - first:
+      213: 21300250
+    second: tilea2_125
+  - first:
+      213: 21300252
+    second: tilea2_126
+  - first:
+      213: 21300254
+    second: tilea2_127
+  - first:
+      213: 21300256
+    second: tilea2_128
+  - first:
+      213: 21300258
+    second: tilea2_129
+  - first:
+      213: 21300260
+    second: tilea2_130
+  - first:
+      213: 21300262
+    second: tilea2_131
+  - first:
+      213: 21300264
+    second: tilea2_132
+  - first:
+      213: 21300266
+    second: tilea2_133
+  - first:
+      213: 21300268
+    second: tilea2_134
+  - first:
+      213: 21300270
+    second: tilea2_135
+  - first:
+      213: 21300272
+    second: tilea2_136
+  - first:
+      213: 21300274
+    second: tilea2_137
+  - first:
+      213: 21300276
+    second: tilea2_138
+  - first:
+      213: 21300278
+    second: tilea2_139
+  - first:
+      213: 21300280
+    second: tilea2_140
+  - first:
+      213: 21300282
+    second: tilea2_141
+  - first:
+      213: 21300284
+    second: tilea2_142
+  - first:
+      213: 21300286
+    second: tilea2_143
+  - first:
+      213: 21300288
+    second: tilea2_144
+  - first:
+      213: 21300290
+    second: tilea2_145
+  - first:
+      213: 21300292
+    second: tilea2_146
+  - first:
+      213: 21300294
+    second: tilea2_147
+  - first:
+      213: 21300296
+    second: tilea2_148
+  - first:
+      213: 21300298
+    second: tilea2_149
+  - first:
+      213: 21300300
+    second: tilea2_150
+  - first:
+      213: 21300302
+    second: tilea2_151
+  - first:
+      213: 21300304
+    second: tilea2_152
+  - first:
+      213: 21300306
+    second: tilea2_153
+  - first:
+      213: 21300308
+    second: tilea2_154
+  - first:
+      213: 21300310
+    second: tilea2_155
+  - first:
+      213: 21300312
+    second: tilea2_156
+  - first:
+      213: 21300314
+    second: tilea2_157
+  - first:
+      213: 21300316
+    second: tilea2_158
+  - first:
+      213: 21300318
+    second: tilea2_159
+  - first:
+      213: 21300320
+    second: tilea2_160
+  - first:
+      213: 21300322
+    second: tilea2_161
+  - first:
+      213: 21300324
+    second: tilea2_162
+  - first:
+      213: 21300326
+    second: tilea2_163
+  - first:
+      213: 21300328
+    second: tilea2_164
+  - first:
+      213: 21300330
+    second: tilea2_165
+  - first:
+      213: 21300332
+    second: tilea2_166
+  - first:
+      213: 21300334
+    second: tilea2_167
+  - first:
+      213: 21300336
+    second: tilea2_168
+  - first:
+      213: 21300338
+    second: tilea2_169
+  - first:
+      213: 21300340
+    second: tilea2_170
+  - first:
+      213: 21300342
+    second: tilea2_171
+  - first:
+      213: 21300344
+    second: tilea2_172
+  - first:
+      213: 21300346
+    second: tilea2_173
+  - first:
+      213: 21300348
+    second: tilea2_174
+  - first:
+      213: 21300350
+    second: tilea2_175
+  - first:
+      213: 21300352
+    second: tilea2_176
+  - first:
+      213: 21300354
+    second: tilea2_177
+  - first:
+      213: 444929151411892343
+    second: tilea2_178
+  - first:
+      213: 5362366772796162826
+    second: tilea2_179
+  - first:
+      213: -9002226671736805477
+    second: tilea2_180
+  - first:
+      213: 8146296891747240303
+    second: tilea2_181
+  - first:
+      213: -1825208956566812692
+    second: tilea2_182
+  - first:
+      213: -6227928294666834172
+    second: tilea2_183
+  - first:
+      213: -3424331616493891993
+    second: tilea2_184
+  - first:
+      213: -2307698251848189209
+    second: tilea2_185
+  - first:
+      213: -2587593755954954720
+    second: tilea2_186
+  - first:
+      213: 2485510883118140362
+    second: tilea2_187
+  - first:
+      213: -4269728779046751095
+    second: tilea2_188
+  - first:
+      213: 3374011017052894277
+    second: tilea2_189
+  - first:
+      213: -8595648140523083308
+    second: tilea2_190
+  - first:
+      213: 3805771333784739140
+    second: tilea2_191
+  - first:
+      213: 4400756557792110147
+    second: tilea2_192
+  - first:
+      213: -721975403158901882
+    second: tilea2_193
+  - first:
+      213: -5148918246740132381
+    second: tilea2_194
+  - first:
+      213: 8614301357594431445
+    second: tilea2_195
+  - first:
+      213: 1211157424676442604
+    second: tilea2_196
+  - first:
+      213: 1836168394152890142
+    second: tilea2_197
+  - first:
+      213: -7787118524869164939
+    second: tilea2_198
+  - first:
+      213: 4779380040853650338
+    second: tilea2_199
+  - first:
+      213: -4090045065676398640
+    second: tilea2_200
+  - first:
+      213: -2080231608398692949
+    second: tilea2_201
+  - first:
+      213: 996344504996019793
+    second: tilea2_202
+  - first:
+      213: -6573860759266440320
+    second: tilea2_203
+  - first:
+      213: 6436705310349954670
+    second: tilea2_204
+  - first:
+      213: 8828358532355334987
+    second: tilea2_205
+  - first:
+      213: 5502917680013546476
+    second: tilea2_206
+  - first:
+      213: 2219680710947987346
+    second: tilea2_207
+  - first:
+      213: 6735384336194904754
+    second: tilea2_208
+  - first:
+      213: 609946429826328532
+    second: tilea2_209
+  - first:
+      213: -826664973433687966
+    second: tilea2_210
+  - first:
+      213: -1365920284509631156
+    second: tilea2_211
+  - first:
+      213: 3226100632379090558
+    second: tilea2_212
+  - first:
+      213: 5229133829301804129
+    second: tilea2_213
+  - first:
+      213: 699323429949604601
+    second: tilea2_214
+  - first:
+      213: 2632958801852988915
+    second: tilea2_215
+  - first:
+      213: 3375578110296943385
+    second: tilea2_216
+  - first:
+      213: -1455231813747681306
+    second: tilea2_217
+  - first:
+      213: -1694890201595419182
+    second: tilea2_218
+  - first:
+      213: 1224377369825062588
+    second: tilea2_219
+  - first:
+      213: 1699093681929519450
+    second: tilea2_220
+  - first:
+      213: -220812139085617140
+    second: tilea2_221
+  - first:
+      213: 4870102547895672150
+    second: tilea2_222
+  - first:
+      213: -4195344344983763974
+    second: tilea2_223
+  - first:
+      213: -7489694145389143499
+    second: tilea2_224
+  - first:
+      213: 4320429500735284024
+    second: tilea2_225
+  - first:
+      213: -7338434182028960807
+    second: tilea2_226
+  - first:
+      213: 7469176010001719994
+    second: tilea2_227
+  - first:
+      213: -4737930849325218259
+    second: tilea2_228
+  - first:
+      213: -6003341946824165219
+    second: tilea2_229
+  - first:
+      213: -2113816419694411821
+    second: tilea2_230
+  - first:
+      213: 7097340554259882131
+    second: tilea2_231
+  - first:
+      213: -4812968276644094450
+    second: tilea2_232
+  - first:
+      213: -9128492304714879949
+    second: tilea2_233
+  - first:
+      213: -2459150464509734334
+    second: tilea2_234
+  - first:
+      213: 946766326660674222
+    second: tilea2_235
+  - first:
+      213: -3313189643286192006
+    second: tilea2_236
+  - first:
+      213: -4804985210503118581
+    second: tilea2_237
+  - first:
+      213: 7702932970019274365
+    second: tilea2_238
+  - first:
+      213: -4011789445523414731
+    second: tilea2_239
+  - first:
+      213: 8663726001242962916
+    second: tilea2_240
+  - first:
+      213: 5662486227946904158
+    second: tilea2_241
+  - first:
+      213: -9043967153278597130
+    second: tilea2_242
+  - first:
+      213: -990527647169538368
+    second: tilea2_243
+  - first:
+      213: 7760274736351240390
+    second: tilea2_244
+  - first:
+      213: -1320583744536092980
+    second: tilea2_245
+  - first:
+      213: -7570500068050248037
+    second: tilea2_246
+  - first:
+      213: -7684774051545485208
+    second: tilea2_247
+  - first:
+      213: -5484526614660439987
+    second: tilea2_248
+  - first:
+      213: 1985331098867691689
+    second: tilea2_249
+  - first:
+      213: -4505429572792730544
+    second: tilea2_250
+  - first:
+      213: 348657376389696504
+    second: tilea2_251
+  - first:
+      213: 8626898927529965446
+    second: tilea2_252
+  - first:
+      213: -4309909617702536402
+    second: tilea2_253
+  - first:
+      213: 1865542376529666814
+    second: tilea2_254
+  - first:
+      213: -265983940490242050
+    second: tilea2_255
+  - first:
+      213: 317503080433440213
+    second: tilea2_256
+  - first:
+      213: -4471138941913881427
+    second: tilea2_257
+  - first:
+      213: -6138786373781700061
+    second: tilea2_258
+  - first:
+      213: 1869276051630744106
+    second: tilea2_259
+  - first:
+      213: 9133110671374506780
+    second: tilea2_260
+  - first:
+      213: -6362048433096000446
+    second: tilea2_261
+  - first:
+      213: -5531571178085300490
+    second: tilea2_262
+  - first:
+      213: -398436861376312496
+    second: tilea2_263
+  - first:
+      213: -4325731379564140388
+    second: tilea2_264
+  - first:
+      213: -7051787196859809962
+    second: tilea2_265
+  - first:
+      213: -587405205682138084
+    second: tilea2_266
+  - first:
+      213: -5272398844587916382
+    second: tilea2_267
+  - first:
+      213: 6231938505950390545
+    second: tilea2_268
+  - first:
+      213: 1476204924565979864
+    second: tilea2_269
+  - first:
+      213: -4113357686963313418
+    second: tilea2_270
+  - first:
+      213: 6600604086024053673
+    second: tilea2_271
+  - first:
+      213: -5815655481967583173
+    second: tilea2_272
+  - first:
+      213: -7724343958188756394
+    second: tilea2_273
+  - first:
+      213: -9066037559641720939
+    second: tilea2_274
+  - first:
+      213: 1506517375503509208
+    second: tilea2_275
+  - first:
+      213: -3937561939656694183
+    second: tilea2_276
+  - first:
+      213: -7945267763972415242
+    second: tilea2_277
+  - first:
+      213: 1785601096175558940
+    second: tilea2_278
+  - first:
+      213: -2938729939963312501
+    second: tilea2_279
+  - first:
+      213: 8452037251990171106
+    second: tilea2_280
+  - first:
+      213: -2032639198197844000
+    second: tilea2_281
+  - first:
+      213: -5411157843170354644
+    second: tilea2_282
+  - first:
+      213: 1675618871396752167
+    second: tilea2_283
+  - first:
+      213: 3962241059441019635
+    second: tilea2_284
+  - first:
+      213: 347252040588743012
+    second: tilea2_285
+  - first:
+      213: 8435978775603237918
+    second: tilea2_286
+  - first:
+      213: 4356021636298381499
+    second: tilea2_287
+  - first:
+      213: 4471934274356237075
+    second: tilea2_288
+  - first:
+      213: -4171828312072430300
+    second: tilea2_289
+  - first:
+      213: 7155978529173746761
+    second: tilea2_290
+  - first:
+      213: -2224328427987399939
+    second: tilea2_291
+  - first:
+      213: -4189546762546073215
+    second: tilea2_292
+  - first:
+      213: 8067036121654313742
+    second: tilea2_293
+  - first:
+      213: -7494365748425611656
+    second: tilea2_294
+  - first:
+      213: 330691357678890386
+    second: tilea2_295
+  - first:
+      213: 6799682919594576357
+    second: tilea2_296
+  - first:
+      213: 2564776113124181534
+    second: tilea2_297
+  - first:
+      213: -1214790240196248791
+    second: tilea2_298
+  - first:
+      213: -7283034208546438411
+    second: tilea2_299
+  - first:
+      213: 1708062847396870710
+    second: tilea2_300
+  - first:
+      213: 7015800655122476824
+    second: tilea2_301
+  - first:
+      213: -8468810944773190409
+    second: tilea2_302
+  - first:
+      213: 6884878390127856441
+    second: tilea2_303
+  - first:
+      213: -253836425378431319
+    second: tilea2_304
+  - first:
+      213: 1723830606737850294
+    second: tilea2_305
+  - first:
+      213: 1226082892563115816
+    second: tilea2_306
+  - first:
+      213: -5345067540588870054
+    second: tilea2_307
+  - first:
+      213: 7210858451859123301
+    second: tilea2_308
+  - first:
+      213: 6786136267833264903
+    second: tilea2_309
+  - first:
+      213: -7686755804923499834
+    second: tilea2_310
+  - first:
+      213: 7843892304291761518
+    second: tilea2_311
+  - first:
+      213: 2206156562654639923
+    second: tilea2_312
+  - first:
+      213: 2788878755134847350
+    second: tilea2_313
+  - first:
+      213: 5141464856535341854
+    second: tilea2_314
+  - first:
+      213: 2739814374867591791
+    second: tilea2_315
+  - first:
+      213: 3047749238186562704
+    second: tilea2_316
+  - first:
+      213: 467672796846760832
+    second: tilea2_317
+  - first:
+      213: -2047623206320026779
+    second: tilea2_318
+  - first:
+      213: -926855863861323007
+    second: tilea2_319
+  - first:
+      213: 4727679971601111313
+    second: tilea2_320
+  - first:
+      213: -8603117145548212460
+    second: tilea2_321
+  - first:
+      213: -4735424813309065946
+    second: tilea2_322
+  - first:
+      213: 4454148052304379733
+    second: tilea2_323
+  - first:
+      213: -5206661944619357365
+    second: tilea2_324
+  - first:
+      213: -7981689901229476866
+    second: tilea2_325
+  - first:
+      213: 5113553611724874279
+    second: tilea2_326
+  - first:
+      213: 493654443863556223
+    second: tilea2_327
+  - first:
+      213: 5706806451993434726
+    second: tilea2_328
+  - first:
+      213: -3807124256642563463
+    second: tilea2_329
+  - first:
+      213: -5957214024618208229
+    second: tilea2_330
+  - first:
+      213: -3744957842503970288
+    second: tilea2_331
+  - first:
+      213: 5922298055905693287
+    second: tilea2_332
+  - first:
+      213: -7197368901200567985
+    second: tilea2_333
+  - first:
+      213: -2604624435859770399
+    second: tilea2_334
+  - first:
+      213: 5822853925136388944
+    second: tilea2_335
+  - first:
+      213: -9012443569416363587
+    second: tilea2_336
+  - first:
+      213: -5165270791934374231
+    second: tilea2_337
+  - first:
+      213: -6549029099200640610
+    second: tilea2_338
+  - first:
+      213: 7174332227895851336
+    second: tilea2_339
+  - first:
+      213: -7093682856986657574
+    second: tilea2_340
+  - first:
+      213: 127199483426813745
+    second: tilea2_341
+  - first:
+      213: -691423945246834084
+    second: tilea2_342
+  - first:
+      213: 6462220454643712493
+    second: tilea2_343
+  - first:
+      213: -6219778844932585422
+    second: tilea2_344
+  - first:
+      213: -7063552935541041658
+    second: tilea2_345
+  - first:
+      213: 6878308198634149079
+    second: tilea2_346
+  - first:
+      213: 3811405737936983967
+    second: tilea2_347
+  - first:
+      213: -2241737419705248561
+    second: tilea2_348
+  - first:
+      213: 4491849812552942028
+    second: tilea2_349
+  - first:
+      213: 9197814284422420779
+    second: tilea2_350
+  - first:
+      213: -2200358709186535876
+    second: tilea2_351
+  - first:
+      213: -5286984769666004164
+    second: tilea2_352
+  - first:
+      213: -7003780317108933020
+    second: tilea2_353
+  - first:
+      213: -4688839664962758552
+    second: tilea2_354
+  - first:
+      213: 6709622191246309858
+    second: tilea2_355
+  - first:
+      213: 1716134986970228236
+    second: tilea2_356
+  - first:
+      213: 2348379379369244924
+    second: tilea2_357
+  - first:
+      213: -5887122008047928067
+    second: tilea2_358
+  - first:
+      213: -275686790837738830
+    second: tilea2_359
+  - first:
+      213: -9144328044261118863
+    second: tilea2_360
+  - first:
+      213: -9194436849602632041
+    second: tilea2_361
+  - first:
+      213: 6098785496598180279
+    second: tilea2_362
+  - first:
+      213: -3256352697486217107
+    second: tilea2_363
+  - first:
+      213: 3513091058432920989
+    second: tilea2_364
+  - first:
+      213: -1751534907222103808
+    second: tilea2_365
+  - first:
+      213: -960546225292659835
+    second: tilea2_366
+  - first:
+      213: 8842323662165457051
+    second: tilea2_367
+  - first:
+      213: -4064906858905898008
+    second: tilea2_368
+  - first:
+      213: -8090102107753792545
+    second: tilea2_369
+  - first:
+      213: -2890838458661805899
+    second: tilea2_370
+  - first:
+      213: -8548186304291325806
+    second: tilea2_371
+  - first:
+      213: -2363005420004286681
+    second: tilea2_372
+  - first:
+      213: -8899395422724113343
+    second: tilea2_373
+  - first:
+      213: -6172135582905879895
+    second: tilea2_374
+  - first:
+      213: 5219597070848808658
+    second: tilea2_375
+  - first:
+      213: -2021285841727698670
+    second: tilea2_376
+  - first:
+      213: 5235181029730969187
+    second: tilea2_377
+  - first:
+      213: -4763650674434083245
+    second: tilea2_378
+  - first:
+      213: -5718406996496609330
+    second: tilea2_379
+  - first:
+      213: 195367405208097039
+    second: tilea2_380
+  - first:
+      213: 5452530342460858410
+    second: tilea2_381
+  - first:
+      213: -6681038596251284483
+    second: tilea2_382
+  - first:
+      213: 4676143217111436330
+    second: tilea2_383
+  - first:
+      213: -8993098737311519934
+    second: tilea2_384
+  - first:
+      213: 958014507368644671
+    second: tilea2_385
+  - first:
+      213: -5933358633857848376
+    second: tilea2_386
+  - first:
+      213: -1804059954800156172
+    second: tilea2_387
+  - first:
+      213: 2359121380739589047
+    second: tilea2_388
+  - first:
+      213: 3025078148206539647
+    second: tilea2_389
+  - first:
+      213: 3481692496752791470
+    second: tilea2_390
+  - first:
+      213: 3381286769595079859
+    second: tilea2_391
+  - first:
+      213: 6249150519520911229
+    second: tilea2_392
+  - first:
+      213: -1049632853441395604
+    second: tilea2_393
+  - first:
+      213: -2886715940632650304
+    second: tilea2_394
+  - first:
+      213: -3592694670659183700
+    second: tilea2_395
+  - first:
+      213: -7632715401859078042
+    second: tilea2_396
+  - first:
+      213: -5674962027716116427
+    second: tilea2_397
+  - first:
+      213: 7145196638887904591
+    second: tilea2_398
+  - first:
+      213: -4162707159213677793
+    second: tilea2_399
+  - first:
+      213: 6663445693547510736
+    second: tilea2_400
+  - first:
+      213: 2975997336822492502
+    second: tilea2_401
+  - first:
+      213: 8726622224501299684
+    second: tilea2_402
+  - first:
+      213: -474345096106515103
+    second: tilea2_403
+  - first:
+      213: 7768912293054445048
+    second: tilea2_404
+  - first:
+      213: -3727645035271860653
+    second: tilea2_405
+  - first:
+      213: 1038691833069290016
+    second: tilea2_406
+  - first:
+      213: 7668529940025435651
+    second: tilea2_407
+  - first:
+      213: 6496708073300585708
+    second: tilea2_408
+  - first:
+      213: -8061532235574818393
+    second: tilea2_409
+  - first:
+      213: 3661087135657254808
+    second: tilea2_410
+  - first:
+      213: 6766524794123272242
+    second: tilea2_411
+  - first:
+      213: 2030762053727759764
+    second: tilea2_412
+  - first:
+      213: 4930481649553560092
+    second: tilea2_413
+  - first:
+      213: -6997978893131520735
+    second: tilea2_414
+  - first:
+      213: 5780780468511310476
+    second: tilea2_415
+  - first:
+      213: 1055806276170577439
+    second: tilea2_416
+  - first:
+      213: 4886614726015588395
+    second: tilea2_417
+  - first:
+      213: 5467453025290170470
+    second: tilea2_418
+  - first:
+      213: 156927792725338458
+    second: tilea2_419
+  - first:
+      213: -4702545342071097382
+    second: tilea2_420
+  - first:
+      213: -342126699352074121
+    second: tilea2_421
+  - first:
+      213: 6492270905266492162
+    second: tilea2_422
+  - first:
+      213: -4674488703710003533
+    second: tilea2_423
+  - first:
+      213: 3320843524410632210
+    second: tilea2_424
+  - first:
+      213: -8469667138971331172
+    second: tilea2_425
+  - first:
+      213: 5367636170202107490
+    second: tilea2_426
+  - first:
+      213: -87336807808857778
+    second: tilea2_427
+  - first:
+      213: 6600217652092726962
+    second: tilea2_428
+  - first:
+      213: -5693213806767551172
+    second: tilea2_429
+  - first:
+      213: -1849401240967643034
+    second: tilea2_430
+  - first:
+      213: 3493380634744238480
+    second: tilea2_431
+  - first:
+      213: 6708338876019242427
+    second: tilea2_432
+  - first:
+      213: 781990677530426425
+    second: tilea2_433
+  - first:
+      213: 7765572575331627890
+    second: tilea2_434
+  - first:
+      213: 4435712759987457563
+    second: tilea2_435
+  - first:
+      213: -1567691234558175474
+    second: tilea2_436
+  - first:
+      213: -3125832485953442239
+    second: tilea2_437
+  - first:
+      213: -4125426463261821577
+    second: tilea2_438
+  - first:
+      213: 7403303899401601839
+    second: tilea2_439
+  - first:
+      213: -1297537680588264130
+    second: tilea2_440
+  - first:
+      213: -872802655555897539
+    second: tilea2_441
+  - first:
+      213: -1129062680516878884
+    second: tilea2_442
+  - first:
+      213: -2459077547291265881
+    second: tilea2_443
+  - first:
+      213: 614434178880695345
+    second: tilea2_444
+  - first:
+      213: 6042544232571421206
+    second: tilea2_445
+  - first:
+      213: -5576898140994877117
+    second: tilea2_446
+  - first:
+      213: 7756192401745958606
+    second: tilea2_447
+  - first:
+      213: -685202293257690722
+    second: tilea2_448
+  - first:
+      213: -3927054729825671733
+    second: tilea2_449
+  - first:
+      213: -4758374820810970256
+    second: tilea2_450
+  - first:
+      213: 8488753533157533890
+    second: tilea2_451
+  - first:
+      213: 3041539992666844258
+    second: tilea2_452
+  - first:
+      213: -2600142527766789459
+    second: tilea2_453
+  - first:
+      213: -2495592365602951576
+    second: tilea2_454
+  - first:
+      213: -6039325460512426329
+    second: tilea2_455
+  - first:
+      213: 5957318585169485987
+    second: tilea2_456
+  - first:
+      213: -8463285796789681179
+    second: tilea2_457
+  - first:
+      213: 4259473395248111944
+    second: tilea2_458
+  - first:
+      213: -1564117558461722249
+    second: tilea2_459
+  - first:
+      213: 6134652043086236373
+    second: tilea2_460
+  - first:
+      213: -8787088403904607138
+    second: tilea2_461
+  - first:
+      213: 266003918477346593
+    second: tilea2_462
+  - first:
+      213: -5809776727671735287
+    second: tilea2_463
+  - first:
+      213: 1748522461669157048
+    second: tilea2_464
+  - first:
+      213: 4622616778242200638
+    second: tilea2_465
+  - first:
+      213: 191383974033853000
+    second: tilea2_466
+  - first:
+      213: -7420798755455090413
+    second: tilea2_467
+  - first:
+      213: -6501924215857585532
+    second: tilea2_468
+  - first:
+      213: -3127402430856160915
+    second: tilea2_469
+  - first:
+      213: -4561000828488947316
+    second: tilea2_470
+  - first:
+      213: 5236499726514502452
+    second: tilea2_471
+  - first:
+      213: -7760404698445895531
+    second: tilea2_472
+  - first:
+      213: -2041400532315778888
+    second: tilea2_473
+  - first:
+      213: 9177257327508119886
+    second: tilea2_474
+  - first:
+      213: 3790317167308042754
+    second: tilea2_475
+  - first:
+      213: 9130701060189805386
+    second: tilea2_476
+  - first:
+      213: -1721161678801145113
+    second: tilea2_477
+  - first:
+      213: -8331278139878431034
+    second: tilea2_478
+  - first:
+      213: -4988741509429214833
+    second: tilea2_479
+  - first:
+      213: -7863971694127868728
+    second: tilea2_480
+  - first:
+      213: -275071177103608001
+    second: tilea2_481
+  - first:
+      213: -14727308833048918
+    second: tilea2_482
+  - first:
+      213: -2159754275099203919
+    second: tilea2_483
+  - first:
+      213: 6080831317716159955
+    second: tilea2_484
+  - first:
+      213: 2122554716032827722
+    second: tilea2_485
+  - first:
+      213: -2281973358164742060
+    second: tilea2_486
+  - first:
+      213: 3457843537172765308
+    second: tilea2_487
+  - first:
+      213: -4282642251515046927
+    second: tilea2_488
+  - first:
+      213: -9035041563728994326
+    second: tilea2_489
+  - first:
+      213: 4775138142200380168
+    second: tilea2_490
+  - first:
+      213: 9190761139274881033
+    second: tilea2_491
+  - first:
+      213: -3081120029346825387
+    second: tilea2_492
+  - first:
+      213: 7301071545863707515
+    second: tilea2_493
+  - first:
+      213: 1061716811296277580
+    second: tilea2_494
+  - first:
+      213: -3024943213078025446
+    second: tilea2_495
+  - first:
+      213: -3096909641308189286
+    second: tilea2_496
+  - first:
+      213: -3060816748420338032
+    second: tilea2_497
+  - first:
+      213: -3504259337115189650
+    second: tilea2_498
+  - first:
+      213: 8064433507591917498
+    second: tilea2_499
+  - first:
+      213: -114664167122441360
+    second: tilea2_500
+  - first:
+      213: -5288592375779050123
+    second: tilea2_501
+  - first:
+      213: -987976704029394194
+    second: tilea2_502
+  - first:
+      213: 512027178624502390
+    second: tilea2_503
+  - first:
+      213: 8532654882409329612
+    second: tilea2_504
+  - first:
+      213: 143912777694949066
+    second: tilea2_505
+  - first:
+      213: -8814159401707370828
+    second: tilea2_506
+  - first:
+      213: 2727568955538164896
+    second: tilea2_507
+  - first:
+      213: 3712154984590025764
+    second: tilea2_508
+  - first:
+      213: 8711100489378495396
+    second: tilea2_509
+  - first:
+      213: -4199266182689170994
+    second: tilea2_510
+  - first:
+      213: -9124222492207900731
+    second: tilea2_511
+  - first:
+      213: 4955468215884424380
+    second: tilea2_512
+  - first:
+      213: 1956765715429628626
+    second: tilea2_513
+  - first:
+      213: -7295573711530459051
+    second: tilea2_514
+  - first:
+      213: 2870289221356805406
+    second: tilea2_515
+  - first:
+      213: 8616882352276451301
+    second: tilea2_516
+  - first:
+      213: 8050131282959799802
+    second: tilea2_517
+  - first:
+      213: -1890619190271008678
+    second: tilea2_518
+  - first:
+      213: 6216136028018577062
+    second: tilea2_519
+  - first:
+      213: 4770446847750433823
+    second: tilea2_520
+  - first:
+      213: 3981643460066682451
+    second: tilea2_521
+  - first:
+      213: -7354163692968235688
+    second: tilea2_522
+  - first:
+      213: -7360543661114867975
+    second: tilea2_523
+  - first:
+      213: 7645417896811795771
+    second: tilea2_524
+  - first:
+      213: 2571819938937512504
+    second: tilea2_525
+  - first:
+      213: -3028689036233971993
+    second: tilea2_526
+  - first:
+      213: 2051585270359059182
+    second: tilea2_527
+  - first:
+      213: -4288885091846692059
+    second: tilea2_528
+  - first:
+      213: -5359960202735010564
+    second: tilea2_529
+  - first:
+      213: -8875747669031975630
+    second: tilea2_530
+  - first:
+      213: 1356813562461181045
+    second: tilea2_531
+  - first:
+      213: -1255410363682493910
+    second: tilea2_532
+  - first:
+      213: -8178076200065894346
+    second: tilea2_533
+  - first:
+      213: -5447782335390597420
+    second: tilea2_534
+  - first:
+      213: -5705519589141291918
+    second: tilea2_535
+  - first:
+      213: -5362130518539867450
+    second: tilea2_536
+  - first:
+      213: 6931468721704324052
+    second: tilea2_537
+  - first:
+      213: 9037030720938351070
+    second: tilea2_538
+  - first:
+      213: -8932392012137037938
+    second: tilea2_539
+  - first:
+      213: -5958005327253616603
+    second: tilea2_540
+  - first:
+      213: 6135332968129429557
+    second: tilea2_541
+  - first:
+      213: 6371286937034292677
+    second: tilea2_542
+  - first:
+      213: 9095580756938625130
+    second: tilea2_543
+  - first:
+      213: -947857213120303067
+    second: tilea2_544
+  - first:
+      213: 7452480052822024260
+    second: tilea2_545
+  - first:
+      213: -7897013339520582486
+    second: tilea2_546
+  - first:
+      213: -4034892793325003748
+    second: tilea2_547
+  - first:
+      213: 5506311389958595243
+    second: tilea2_548
+  - first:
+      213: -339007057316045112
+    second: tilea2_549
+  - first:
+      213: -2601496813181636727
+    second: tilea2_550
+  - first:
+      213: -2721777789016945178
+    second: tilea2_551
+  - first:
+      213: -7480130377245574188
+    second: tilea2_552
+  - first:
+      213: 2948086781637668170
+    second: tilea2_553
+  - first:
+      213: -1906573925860507142
+    second: tilea2_554
+  - first:
+      213: -8622766954197866088
+    second: tilea2_555
+  - first:
+      213: -813731564116566449
+    second: tilea2_556
+  - first:
+      213: -3810331524624930073
+    second: tilea2_557
+  - first:
+      213: 1640527631187753338
+    second: tilea2_558
+  - first:
+      213: 2070649963081445461
+    second: tilea2_559
+  - first:
+      213: 645804488625152947
+    second: tilea2_560
+  - first:
+      213: 3387150471714551391
+    second: tilea2_561
+  - first:
+      213: 3484263539871470734
+    second: tilea2_562
+  - first:
+      213: 6209306207653493655
+    second: tilea2_563
+  - first:
+      213: 3999445338523211430
+    second: tilea2_564
+  - first:
+      213: -4684120974683770444
+    second: tilea2_565
+  - first:
+      213: 739732899818869062
+    second: tilea2_566
+  - first:
+      213: 582758823846662370
+    second: tilea2_567
+  - first:
+      213: -1183803171551508860
+    second: tilea2_568
+  - first:
+      213: -1978623902473980267
+    second: tilea2_569
+  - first:
+      213: 874149631922147047
+    second: tilea2_570
+  - first:
+      213: 8228971085089943977
+    second: tilea2_571
+  - first:
+      213: -1326037716161553262
+    second: tilea2_572
+  - first:
+      213: -4551902874788984951
+    second: tilea2_573
+  - first:
+      213: 3437979408435384043
+    second: tilea2_574
+  - first:
+      213: -6614864445653241427
+    second: tilea2_575
+  - first:
+      213: 3085592851450845718
+    second: tilea2_576
+  - first:
+      213: -4867470395164501646
+    second: tilea2_577
+  - first:
+      213: -5733378105352890362
+    second: tilea2_578
+  - first:
+      213: -7096965493037056952
+    second: tilea2_579
+  - first:
+      213: -2087714402673450246
+    second: tilea2_580
+  - first:
+      213: -5061983843203176540
+    second: tilea2_581
+  - first:
+      213: -1742762405841361904
+    second: tilea2_582
+  - first:
+      213: 5757256365431017750
+    second: tilea2_583
+  - first:
+      213: -6068962119721080398
+    second: tilea2_584
+  - first:
+      213: -7199760115137740955
+    second: tilea2_585
+  - first:
+      213: -8733356767338951150
+    second: tilea2_586
+  - first:
+      213: 3426666086152396622
+    second: tilea2_587
+  - first:
+      213: 680029375015571353
+    second: tilea2_588
+  - first:
+      213: 3108599388680061889
+    second: tilea2_589
+  - first:
+      213: -5878859592710988827
+    second: tilea2_590
+  - first:
+      213: -8143846179194070143
+    second: tilea2_591
+  - first:
+      213: 8608840570441591207
+    second: tilea2_592
+  - first:
+      213: 5214622246866476333
+    second: tilea2_593
+  - first:
+      213: 5638575319799356767
+    second: tilea2_594
+  - first:
+      213: 577008981463526418
+    second: tilea2_595
+  - first:
+      213: -6032923554541090375
+    second: tilea2_596
+  - first:
+      213: -1880692378761413964
+    second: tilea2_597
+  - first:
+      213: -6134731398096672508
+    second: tilea2_598
+  - first:
+      213: -151183108177590724
+    second: tilea2_599
+  - first:
+      213: -4865678467855522498
+    second: tilea2_600
+  - first:
+      213: 2990199647631009642
+    second: tilea2_601
+  - first:
+      213: 156621263996899053
+    second: tilea2_602
+  - first:
+      213: -4205974044780544187
+    second: tilea2_603
+  - first:
+      213: -2085364910046596860
+    second: tilea2_604
+  - first:
+      213: -118892396597995126
+    second: tilea2_605
+  - first:
+      213: -910996541341951785
+    second: tilea2_606
+  - first:
+      213: -8608486950207463935
+    second: tilea2_607
+  - first:
+      213: -8493174186324233568
+    second: tilea2_608
+  - first:
+      213: 2019462751962025045
+    second: tilea2_609
+  - first:
+      213: 3726353830079163465
+    second: tilea2_610
+  - first:
+      213: -5389929852223280877
+    second: tilea2_611
+  - first:
+      213: -5265046154608926647
+    second: tilea2_612
+  - first:
+      213: 6172321631416093949
+    second: tilea2_613
+  - first:
+      213: -8105929367623819197
+    second: tilea2_614
+  - first:
+      213: -6632880226859126926
+    second: tilea2_615
+  - first:
+      213: 1488671506752959397
+    second: tilea2_616
+  - first:
+      213: -933058112864413895
+    second: tilea2_617
+  - first:
+      213: 5082026099154142870
+    second: tilea2_618
+  - first:
+      213: 4459747847295126697
+    second: tilea2_619
+  - first:
+      213: 3467156448032986214
+    second: tilea2_620
+  - first:
+      213: 7836857059971340081
+    second: tilea2_621
+  - first:
+      213: -5028066157500678841
+    second: tilea2_622
+  - first:
+      213: 507377138872116672
+    second: tilea2_623
+  - first:
+      213: -2524571790824560075
+    second: tilea2_624
+  - first:
+      213: 6642030626748089558
+    second: tilea2_625
+  - first:
+      213: -5235690599040769550
+    second: tilea2_626
+  - first:
+      213: 7380056379437589653
+    second: tilea2_627
+  - first:
+      213: -4451758582359573403
+    second: tilea2_628
+  - first:
+      213: 4211785230402595835
+    second: tilea2_629
+  - first:
+      213: -2848612440504839607
+    second: tilea2_630
+  - first:
+      213: 4859971535841308844
+    second: tilea2_631
+  - first:
+      213: -341184228782490637
+    second: tilea2_632
+  - first:
+      213: -4688964891959648132
+    second: tilea2_633
+  - first:
+      213: 3146010101561376357
+    second: tilea2_634
+  - first:
+      213: 3866717977318747986
+    second: tilea2_635
+  - first:
+      213: -8282645421025491236
+    second: tilea2_636
+  - first:
+      213: 6242534246669600596
+    second: tilea2_637
+  - first:
+      213: -6273749946881378122
+    second: tilea2_638
+  - first:
+      213: -2694465292111203734
+    second: tilea2_639
+  - first:
+      213: -2162359239269563061
+    second: tilea2_640
+  - first:
+      213: 6304257295740930849
+    second: tilea2_641
+  - first:
+      213: -7911641325633493936
+    second: tilea2_642
+  - first:
+      213: 7938862732637465917
+    second: tilea2_643
+  - first:
+      213: 7574485310321083578
+    second: tilea2_644
+  - first:
+      213: -6846622877105736082
+    second: tilea2_645
+  - first:
+      213: -7245399654578089999
+    second: tilea2_646
+  - first:
+      213: -5657044868481799511
+    second: tilea2_647
+  - first:
+      213: 338804662120042597
+    second: tilea2_648
+  - first:
+      213: 3170563643482716676
+    second: tilea2_649
+  - first:
+      213: 5811079334435262924
+    second: tilea2_650
+  - first:
+      213: 642980761987170165
+    second: tilea2_651
+  - first:
+      213: -6696610564128130405
+    second: tilea2_652
+  - first:
+      213: -3816535250595334616
+    second: tilea2_653
+  - first:
+      213: -4595146645487991844
+    second: tilea2_654
+  - first:
+      213: -235497764265697022
+    second: tilea2_655
+  - first:
+      213: -261034635402350707
+    second: tilea2_656
+  - first:
+      213: 5885067549537088653
+    second: tilea2_657
+  - first:
+      213: 2557493671940796273
+    second: tilea2_658
+  - first:
+      213: 8527681967616008193
+    second: tilea2_659
+  - first:
+      213: -3925944049217277294
+    second: tilea2_660
+  - first:
+      213: 3697830783650576825
+    second: tilea2_661
+  - first:
+      213: 8380628547673991663
+    second: tilea2_662
+  - first:
+      213: -7372469670254171813
+    second: tilea2_663
+  - first:
+      213: 5090756857603824221
+    second: tilea2_664
+  - first:
+      213: -7610170675285571729
+    second: tilea2_665
+  - first:
+      213: -8440205836062766154
+    second: tilea2_666
+  - first:
+      213: -8084832824367540992
+    second: tilea2_667
+  - first:
+      213: -6412722033776479932
+    second: tilea2_668
+  - first:
+      213: 6274389392411493525
+    second: tilea2_669
+  - first:
+      213: 1449325015803626583
+    second: tilea2_670
+  - first:
+      213: -1486319701948621192
+    second: tilea2_671
+  - first:
+      213: 8214379493599817374
+    second: tilea2_672
+  - first:
+      213: 312472767388405552
+    second: tilea2_673
+  - first:
+      213: 5774430275786133034
+    second: tilea2_674
+  - first:
+      213: 6021807403450838835
+    second: tilea2_675
+  - first:
+      213: -7739365365814504035
+    second: tilea2_676
+  - first:
+      213: -4531548029161531351
+    second: tilea2_677
+  - first:
+      213: 4581342651829567148
+    second: tilea2_678
+  - first:
+      213: -6715784269800604622
+    second: tilea2_679
+  - first:
+      213: -6547473182536270357
+    second: tilea2_680
+  - first:
+      213: -3109493739072582624
+    second: tilea2_681
+  - first:
+      213: -8612452100166147657
+    second: tilea2_682
+  - first:
+      213: -1630897044626952743
+    second: tilea2_683
+  - first:
+      213: 615275506419642886
+    second: tilea2_684
+  - first:
+      213: 955061507932456914
+    second: tilea2_685
+  - first:
+      213: 2837406252683879840
+    second: tilea2_686
+  - first:
+      213: 4938573344069616300
+    second: tilea2_687
+  - first:
+      213: -7329711206449671487
+    second: tilea2_688
+  - first:
+      213: -4571583356600603284
+    second: tilea2_689
+  - first:
+      213: 2480431014980378689
+    second: tilea2_690
+  - first:
+      213: -7980350471594900111
+    second: tilea2_691
+  - first:
+      213: 6293448885424071347
+    second: tilea2_692
+  - first:
+      213: 8494349436582422339
+    second: tilea2_693
+  - first:
+      213: -1344949231874712012
+    second: tilea2_694
+  - first:
+      213: 1003037423657239705
+    second: tilea2_695
+  - first:
+      213: 6276507760440842191
+    second: tilea2_696
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tilea2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434e85dea3128b8479fa4602f7f40b81
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11e4134614a61a41a429b5162d3b225
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f40022cbb4f5d40a864865516ba321
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcbf6c3736de634d968b9eeccab4aca
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493fd0e80d41ad849af73a433e162e68
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2f10e809f00884aa0673fd16a46002
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe9c562178710b41b2c80ff40b72aea
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5f7d7a6c1a3614eacc0f9f714cee40
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763775b010132da418277fc2adf51350
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc84f457732799408c1b63e1c878b45
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad2cef84cb2e404aab2c594fffc584a
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc7abe3c55ac034e989629282850167
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702381262d8fc3a48941f7f04168db7b
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c49515f6d1a39419d56461a9ba0851
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c56b19aa07bfd4b93568f435fdb5e0
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c955f2a3f78d0d748b11314b7c302d9b
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9af4e822b041eb4e9196d2094328766
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c425dea19c2ebe74da87e9cd86ef93d7
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef223f0a54a52824998198f561d4cac2
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e7497f2dabc3c4eb70b49969391650
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5385eb1e093f01a499ba5584ba850eee
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d57d034154d20439c31856925726f8
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b429166384c78f3489992838fdce3646
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5f111b47b48f24a827fa493453fbdb
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e26fae97a402a46b8093a20626f64b
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bcb44a7785b4443bf8c6189e5275cf
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e790e2f952ee24ca837ef8769cef23
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_27
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241398a901426aa499651dd6146b468e
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd381658c876fd45b6167525d525b70
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_29
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f614dcab03c7b91439283c449e29f43e
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_30
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41286e5ae824133429b34a5dd31dc293
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_31
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dafc659a065fa94aafc743a0ce58003
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a54aac5bd3e5944f80d62d6e63d250a
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345357dfcb9c82c41a5c30cb076bca46
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1891ce41e924746418e74c582266f0c8
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe8a4dc2cd01e74fabd5a9043249b48
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de79ee826a256d1498ae9b566c5447bc
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c214394e8f217774798141ae279220d1
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd7be0e90dfaa1408c0984462ea4ea5
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c27c2e96b95f6c47a37f0e6765899de
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33d3e5109ee91647a39a189b5bc6abf
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad576a9301037024aadc27bbc598ccdf
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e4a0cc6131ead448154e81026d6f70
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_43
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efbbe42f3922a947b95f6308629a959
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4cc04adbbdaae4f934a25c8c381b39
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_45
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c8197e7bd65c54b819b1a19cd6ad1e
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f74de0c29e1aed4a92189be39e14a5e
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cc9a83af8d8fc488c72f6684815b2e
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361e2bb3a92547a4f94254244b34529f
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77203b36ebbe7964c8843bd91df39f89
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba38b098c20b3954abec1329db963f3c
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fef54a25975a94c8a155c817162b97
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37df41ea3d535de49855b7590cfba48c
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ca011e8d955e24196483ecd7b4a320
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccd107b57e1bbc42b180016b5987cc9
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f2b4ce33db3fe46a1d155b3ae18888
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fcb433d31132346b5c8641c1f7a274
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_57
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802791a9f0999dd4b8a0599cf693e8ab
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_58
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8f7b851a903f34094ab88741ce39ab
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_59
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc13cb472cd81254fba8408ca001ab0a
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290ec89b9a486014484959f4acdbf860
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_61
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa149f3b092a2214cb40274844af396e
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_62
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdea07fa3c6ac049a9f8cd39acfac41
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_63
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1b498e64b85824497e624b9ca6d481
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9583ae91f34573748a95f8441591adb4
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9b6a983dcc383478b53bd7df483c25
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_66
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c247dea159c5b20438ef955461ddb233
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_67
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f02e911b469a949b9dd9ac4d22a9e2
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca93d0cd4fe265e4fa57bee2e5b421a7
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_69
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02ba847a5e5cc64cb4ccbe5df994b5b
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_70
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5ece1ad5a17094e847d0ade9819a13
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_71
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb82414a23f01954c8fe43547c8c17ec
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_72
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93acee7dafdf46c4a82f14c3fe2c7336
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_73
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb63063906f83e241ae4aa4e595f27bc
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_74
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff925c7bb8a349418915e658e485170
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_75
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c559f7b51f382d4692519e609d2f712
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_76
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ce41093a368fe418cdcf239437d536
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_77
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1217855b60c067c41b48fe566b5479d1
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fc03d42c05ace45ab7549db94a0650
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255482a6da3a6334eaf6ccf3c3141009
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd004bb80cfe3f149918e4461366cbf1
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_81
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d5db6e1f1ce9c47b9749174070d775
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9958cb15bf1330245845e065813f6bc3
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c843bdae894c5047905983bd815f4c0
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057d15ddf77f2124ab26e4a44ddc60bd
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_85
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a866c97eae177499f8fadd0b7eca54
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_86
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4ec4d9167328344bc59d57867bd2da
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_87
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216fcf01b8342d24e8de459ce182658b
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_88
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d350f9d451f35074193116b3126aaf68
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_89
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e897f5f8fef51174a8d183b3ad5f223c
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_90
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40fce2da279c5b4cabcca89bc5dcd63
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_91
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1acc2f1d7664047b700eccd86fdae8
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_92
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66664e9edf05394f96b6c70cf2a7250
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_93
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8699fe47de699464fab1d530d49b67c0
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a44ec737d343f349b03626d4d56eec5
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_95
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abba0a2d9b3833347830ba1116804e3c
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_96
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca0c3fa7941c0f499776e599c8ddebb
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_97
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7da842130214b4880e96d304d79782
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2556ba3847b29e340bdebdbcdeb59d5b
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_99
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a92e9745e5b044690f06d7b4af35d3
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_100
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3681e27527aa17f45a7ab14b8029ffc9
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_101
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16662729270a8384d9ce62d8e24051cd
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_102
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4183d146f4fc83478cc13ba91478172
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_103
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a8824b3c33c32409a681132511413e
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_104
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735cfd7b686ae0e44a9611a8a21e4b2b
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_105
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a1a68e876ef05478d5afca69fce247
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_106
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33660c0f9513d4146b92a5c4a89c0c62
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_107
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c53c7f7c6862ff478fe532b170b096b
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_108
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf927357fa9a11d4b9ae4d7acb9df8e9
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_109
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058d45bafd3a44c408a1072ac77fe550
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f48e7a696e53547a50e66844bdaf16
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_111
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616c4a5d0bd948848b031dacc2585151
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_112
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec2de85f6027d549b5f221eaedc4567
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_113
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dec53154ba0d934cb44295174dca264
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_114
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f1fe5744f113643a81349e1f4c3f90
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_115
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30df1a091a4792047b836ce7ea48c5c7
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12b03d531fa6384cae10ab4cee41362
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_117
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e85bfd79799b4458e89964b40f9927
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_118
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fabbae777a4e54eb64fb9f5a7c2c3e
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_119
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1659e225d322ddc428bd9874b44cdc81
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_120
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f863e21d9c46a4abc7588c712c8161
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_121
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2bb85b4d089bb49b39475dd66af170
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_122
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84aa24ec4db5b9b459fe66fb178677de
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_123
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1173b653a10c5d146a861adbd6140274
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_124
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2160d96d9dac04192c85b6077c8eb1
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_125
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9249d67729d718248ab854e6c94c3bba
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0437cb495ca1cea428cfdf31c86431a0
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_127
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f37eb7ddd7ec7f4a911423f0cb66c50
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f037c1dedb87c6f44a1b970edb8e350f
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_129
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaaeb5903045fe498ae79c76981495b
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_130
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812b4a851a64e474284c4be49e624cad
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_131
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8a962f24752ab4b8398a7d085e026e
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79db5a5fe421eab498d365352e77bc3d
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_133
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab149c65ef5918f40b266fbfc7ec93b4
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_134
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1263cd86d1d16c94086fa5745c1cc284
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_135
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06629d27efb613448a175e834c96cf3f
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_136
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e792cd55fb81f704eaa55262248c70a4
+      internalID: 21300272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_137
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f31ebbf462de394fb3dfd406e1d9cbe
+      internalID: 21300274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_138
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523264de929365d45822ae032b027a4a
+      internalID: 21300276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_139
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36353d4ad3e696479756219d2245f41
+      internalID: 21300278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_140
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b779d382881abb4da68c09b28927295
+      internalID: 21300280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_141
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c4ca605e4b0ea40a38cb69a0ce5138
+      internalID: 21300282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_142
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f0b6c187126ab44b9d42d0414026ad
+      internalID: 21300284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_143
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11342e2e7cbd78488b18403c05a2f5d
+      internalID: 21300286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_144
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36f5afe766d4574b8693c00d0e43a0a
+      internalID: 21300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_145
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e8e42460586444a9a0d7d4842c9106
+      internalID: 21300290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_146
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf577b787897304bb945f5a4028cc0f
+      internalID: 21300292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_147
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d1a093183989644a2ae3cc1cbf9c1f
+      internalID: 21300294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_148
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d30b0dfbbcefc43bdf382e9eb7d45f
+      internalID: 21300296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_149
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb9d08eaec3061418ee228d0911929d
+      internalID: 21300298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_150
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd3c17564b4f2741acb802c8340cc2e
+      internalID: 21300300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_151
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab5c091c04e4814f8e4dccc7d868b20
+      internalID: 21300302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_152
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d363b81162826404bb49dced62e3d760
+      internalID: 21300304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_153
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7410f68f0867d02439d3cee07f603c01
+      internalID: 21300306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_154
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3f2fe4da6341e48a2efb85f619ae37
+      internalID: 21300308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_155
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aba1bc129ac3ce43b842ac6ed730077
+      internalID: 21300310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_156
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c273edc2445a744b2ce0ac512a28e6
+      internalID: 21300312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_157
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d901adc528207b845a28755260548f9d
+      internalID: 21300314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_158
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104eb0fa671b0f54fb080cb796deb4b6
+      internalID: 21300316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_159
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e1f4c5ff1a2e145b81db334921f71f
+      internalID: 21300318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_160
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0181c501cd51af4fa1c2ea8a766e10c
+      internalID: 21300320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_161
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3270e80b52a591f42a72d8f374775960
+      internalID: 21300322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_162
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8255a40ead95e40bdcdadfe2d159fd
+      internalID: 21300324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_163
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b052f9a843d4ab549a5513206577f4d5
+      internalID: 21300326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_164
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9c9a879a8477642963e63365f70624
+      internalID: 21300328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_165
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aee0fe1d81934b40980faec0b467506
+      internalID: 21300330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_166
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a0648a825dca14db20dc5970afe33a
+      internalID: 21300332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_167
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b5c28e57c27f9429e678abd6654d16
+      internalID: 21300334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_168
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a316e587ef8e2e4db21370df430e642
+      internalID: 21300336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_169
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4275eb936ac5e40b6382e7b0a3e424
+      internalID: 21300338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_170
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25912612f8ee1848b7fdacdc47ed282
+      internalID: 21300340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_171
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ba23c649e80054d9339e52d5b419de
+      internalID: 21300342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_172
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcf5d6a91c7e77459d4057f28ecd93d
+      internalID: 21300344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_173
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e2d694012ff034da94fa3df864a220
+      internalID: 21300346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_174
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4188b86d5b3a78f49af9384feacdf364
+      internalID: 21300348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_175
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4e41287c8f49241a66759c17d7d293
+      internalID: 21300350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_176
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19028f646fbe728488acee15a467236b
+      internalID: 21300352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_177
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e661ac0f39b2c4daf2f77417a7d989
+      internalID: 21300354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_178
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cc5582ea43b2b4696aab50ee21b2c6
+      internalID: 444929151411892343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_179
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f6639e001cdd6448f8c8977430f46c
+      internalID: 5362366772796162826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_180
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5563d12b758e6a4a9e2971e1773435c
+      internalID: -9002226671736805477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_181
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88fe3d3cd117f74f9f368af7f428443
+      internalID: 8146296891747240303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_182
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb146b5c5f0a2d6408dc72027d0da3a2
+      internalID: -1825208956566812692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_183
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a020ad663e18c34ab4afcd92b032817
+      internalID: -6227928294666834172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_184
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5a2fc5518473744aa602fd5015df88
+      internalID: -3424331616493891993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_185
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691919120cb80664cb53dc0467690c1b
+      internalID: -2307698251848189209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_186
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce09846abd3eb4c4da92d4f48a721585
+      internalID: -2587593755954954720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_187
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e329ae15fd4364e8baf70fe7aa6a77
+      internalID: 2485510883118140362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_188
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b82adcf9e885d94d9dd1ad80e150ab1
+      internalID: -4269728779046751095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_189
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f2062d15e90cc458157e9838208602
+      internalID: 3374011017052894277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_190
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93080edba3d3484d8a88af2bbd7d7cc
+      internalID: -8595648140523083308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_191
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f69505d0aafc0c4c9ae55e021f3962e
+      internalID: 3805771333784739140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_192
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b6ebdd5792bca41ab9c4af20bc5ca7
+      internalID: 4400756557792110147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_193
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe665862c3155c049aecf51815ad0939
+      internalID: -721975403158901882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_194
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa2470772d2d1844b67041752f85299
+      internalID: -5148918246740132381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_195
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693d395a9cf68b44d9fbc39b46ff689c
+      internalID: 8614301357594431445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_196
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac7feab3735b5342899d666385e14af
+      internalID: 1211157424676442604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_197
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c618000b5b1af6498469ee363cd2cd9
+      internalID: 1836168394152890142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_198
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f420d806845043f42892795334d1ce8b
+      internalID: -7787118524869164939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilea2_199
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095029516ab8e3045a0ca23e58577c9c
+      internalID: 4779380040853650338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: beea59a80c6b27a4fbdb96f093e357b0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: texture/tile/tilea2.data
+  assetBundleVariant: 

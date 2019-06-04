@@ -1,0 +1,115 @@
+--Author : Administrator
+--Date   : 2018/11/20
+
+--声明，这里声明了类名还有属性，并且给出了属性的初始值。
+--NPC赠送界面
+NPCGivePage = {}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+NPCGivePage.__index = NPCGivePage
+NPCGivePage.gameobect = nil
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function NPCGivePage:New() 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, NPCGivePage);  --将self的元表设定为Class
+    return self;    --返回自身
+end
+
+function NPCGivePage:LuaInit(LuaTable)
+	self.LuaTable = LuaTable;
+end
+
+--开始时调用
+function NPCGivePage:Start(gameobject) 
+	game.OpenPage = true
+	self.gameobect = gameobject;
+	self.gameobect.transform.localScale = Vector3.New(1,1,1);
+	self.gameobect.transform.localPosition = Vector3.New(0,0,0);
+	self.itemlist = {};
+
+
+	game.OpenPage = true;
+
+	self.Scroll_list = self.gameobect.transform:Find("Scroll View/Viewport/Content");
+	local Btn_close = self.gameobect.transform:Find("Close") 
+	local Btn_give = self.gameobect.transform:Find("GiveBtn") 
+
+	EventTriggerListener.Get(Btn_close.gameObject).OnClickCall = "OnClose";
+	EventTriggerListener.Get(Btn_close.gameObject):OnSetLuaTable(self.LuaTable);
+
+	EventTriggerListener.Get(Btn_give.gameObject).OnClickCall = "OnGiveNpc";
+	EventTriggerListener.Get(Btn_give.gameObject):OnSetLuaTable(self.LuaTable);
+
+	self:refreshItems()
+
+	return gameobject;
+end
+
+function NPCGivePage:OnClose(gameobject)
+	game.OpenPage = false
+	UnityEngine.GameObject.Destroy(self.gameobect);
+	return gameobject;
+end
+
+function NPCGivePage:refreshItems()
+	self:ClearItems();
+	for key, value in pairs(itemmaneger.itemlist) do 
+		self:CreateItem(value);
+	end
+end
+
+function NPCGivePage:CreateItem(itemData)
+	local ItemRes = ResourceManager.GetInstance():Load("Prefab/UI/ItemUI/Item");
+	local item = UnityEngine.GameObject.Instantiate(ItemRes);
+	item.transform:SetParent(self.Scroll_list.transform);
+	item.name = itemData.guid;
+	item.transform:Find("Name"):GetComponent("Text").text = itemData.name;
+	item.transform:Find("Num"):GetComponent("Text").text = "×"..itemData.num;
+	local spriteImage = ResourceManager.GetInstance():LoadSprite("Texture/item/"..itemData.id);
+	item.transform:Find("Image"):GetComponent("Image").sprite = spriteImage;
+	--EventTriggerListener.Get(item.gameObject).OnClickCall = "SelectItem";
+	--EventTriggerListener.Get(item.gameObject):OnSetLuaTable(self.LuaTable);
+	item.gameObject:AddComponent(typeof(ScrollViewEventTrigger));
+	item.gameObject:GetComponent("ScrollViewEventTrigger"):SetEventCall(self.LuaTable,"SelectItem");
+	table.insert (self.itemlist,item);
+end
+
+function NPCGivePage:ClearItems()
+	if self.itemlist~=nil then
+		for key, value in pairs(self.itemlist) do   
+			UnityEngine.GameObject.Destroy(value.gameObject);
+		end
+	end
+	self.selectBtn = nil;
+	self.itemlist = {}
+end
+
+function NPCGivePage:SelectItem(gameobject)
+	if self.selectBtn ~= nil then
+		self.selectBtn.transform:Find("select").gameObject:SetActive(false);
+	end
+	self.selectBtn = gameobject;
+	self.selectBtn.transform:Find("select").gameObject:SetActive(true);
+	self.selectItem = gameobject.name;
+	return 	gameobject;
+end
+
+function NPCGivePage:OnGiveNpc()
+	if self.selectItem ~=nil then
+		playerdatamaneger.addNPCGive(gamectrl.selectNPC,2)
+		itemmaneger.delItemByGuid(self.selectItem,1);
+		self:refreshItems();
+	end
+end
+
+
+function NPCGivePage.Update()
+end
+
+
+
+
+return NPCGivePage
+
+--endregion

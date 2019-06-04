@@ -1,0 +1,18 @@
+﻿--道具列表
+--属性type: 1-武器，2-防具,3-戒指,4-宝物,5-普通道具,6-消耗品(使用后触发特殊效果,比如回血)
+--道具触发的特殊效果event:1-回血
+itemConfigList = {
+	{id = 10000,type = 1,add=false,name = "破烂的匕首",dec = "一把旧的匕首，没什么攻击力",atk=2,def=0,hp=0,price=1};
+	{id = 10001,type = 2,add=false,name = "破烂的旧衣服",dec = "不知道是谁扔掉的，很破烂",atk=0,def=5,hp=2,price=1};
+	{id = 10002,type = 3,add=false,name = "铜戒指",dec = "很普通的戒指，不值钱",atk=1,def=1,hp=1,price=1};
+	{id = 10003,type = 4,add=false,name = "乞丐的传家宝",dec = "应该是个假货，不知从哪儿捡来的",atk=0,def=0,hp=2,price=1};
+	{id = 10004,type = 5,add=false,name = "丽莎的内衣",dec = "丽莎的内衣，有点小（~坏笑）",atk=0,def=0,hp=0,price=1};
+	{id = 10005,type = 6,add=true,name = "小血瓶",dec = "回复少量生命",atk=0,def=0,hp=0,price=1,event="1_10"};
+	{id = 10006,type = 5,add=true,name = "小鲜花",dec = "少女很喜欢",atk=0,def=0,hp=0,price=1};
+	{id = 10007,type = 5,add=false,name = "丽莎的洋娃娃",dec = "丽莎的洋娃娃",atk=0,def=0,hp=0,price=1};
+}
+
+
+
+
+

@@ -1,0 +1,109 @@
+﻿
+--角色任务控制逻辑 
+talkmaneger = {}
+
+talkmaneger.talkdata = nil;
+talkmaneger.talkIndex = 0;
+talkmaneger.CurNPC = nil;
+talkmaneger.talking = false;
+
+function talkmaneger.getTalkdata(talkid)
+	for key, value in pairs(talkList) do 
+		if value.talkid == talkid then
+			return value;
+		end
+	end
+	return nil;
+end
+
+--与NPC对话时调用
+function talkmaneger.onNpcTalk()
+	if gamectrl.selectNPC~=nil then
+		--先填充NPC名字
+		local npcdata = sceneNpcManager.GetNpcConfigData(tonumber(gamectrl.selectNPC));
+		--初始化对话内容
+		talkmaneger.QuestID = questmaneger.GetQuestForNPC(tonumber(gamectrl.selectNPC));
+		local talkid = 0;
+		if talkmaneger.QuestID == 0 then
+			--进行普通对话
+			local NPCTalkData = sceneNpcManager.GetNpcTalkConfigData(tonumber(gamectrl.selectNPC));
+			if NPCTalkData ~= nil then
+				talkid = NPCTalkData.normaltalk;
+			else
+				return;
+			end
+		else
+			local QuestConfig = questmaneger.findQuestFormConfig(talkmaneger.QuestID);
+			local player_Quest = questmaneger.findQuest(talkmaneger.QuestID);
+			--玩家身上有这个任务
+			if player_Quest ~=nil then
+				if not player_Quest.Complated and QuestConfig.runingtalk~=nil then
+					talkid = QuestConfig.runingtalk;
+				else
+					talkid = QuestConfig.endtalk;
+				end
+			else
+				talkid = QuestConfig.pretalk;
+			end
+		end
+		--talkmaneger.talkdata = talkmaneger.getTalkdata(talkid);
+		talkmaneger.CurNPC = gamectrl.selectNPC;
+		talkmaneger.StartTalk(talkid);
+	end
+end
+
+--对话结束时如果是任务对话，刷新对话状态
+function talkmaneger.QuestOper()
+	if talkmaneger.QuestID ~=nil then
+		print("处理任务:"..talkmaneger.QuestID);
+		questmaneger.refreshquest(talkmaneger.QuestID,1,tonumber(talkmaneger.CurNPC),tonumber(talkmaneger.CurNPC));
+		questmaneger.complateQuest(talkmaneger.QuestID);
+	end
+end
+
+function talkmaneger.StartTalk(talkid)
+	talkmaneger.talking = true;
+	talkmaneger.talkdata = talkmaneger.getTalkdata(talkid);
+	talkmaneger.talkIndex = 0;
+	talkmaneger.NextTalk();
+end
+
+function talkmaneger.NextTalk()
+	talkmaneger.talkIndex = talkmaneger.talkIndex + 1;
+	talkmaneger.CurTalkData = talkmaneger.talkdata.talktextlist[talkmaneger.talkIndex];
+	if talkmaneger.talkIndex > table.getn(talkmaneger.talkdata.talktextlist) then
+		talkmaneger.OnEnd();
+	else
+		talkmaneger.OnStep();
+	end
+end
+
+function talkmaneger.OnEnd()
+	talkmaneger.QuestOper();
+	talkmaneger.QuestID =nil;
+	talkmaneger.CurNPC = nil;
+	talkmaneger.talking = false;
+end
+
+
+function talkmaneger.OnStep()
+	if talkmaneger.CurTalkData.type == 1 then
+		--对话
+		print("+++++++++++++++++++++++:"..talkmaneger.CurTalkData.name);
+		talkboxPage.Show();
+	elseif talkmaneger.CurTalkData.type == 2 then
+		--触发演出剧情
+	elseif talkmaneger.CurTalkData.type == 3 then
+		--摄像机操作
+	elseif talkmaneger.CurTalkData.type == 4 then
+		--切换场景，同场景切换坐标
+	elseif talkmaneger.CurTalkData.type == 5 then
+		--黑屏或亮屏
+	elseif talkmaneger.CurTalkData.type == 6 then
+		--NPC隐藏
+
+	end
+end
+
+
+return talkmaneger

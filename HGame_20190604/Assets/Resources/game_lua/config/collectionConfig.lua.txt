@@ -1,0 +1,10 @@
+﻿--宝箱列表，场景上宝箱的基本信息
+collectionSceneList = {
+	{id = 20001,type=1,scene="scene_3",operName="采集",pos_x = -2159,pos_y=447,GiveList={{id=10006,num=1}}};
+	{id = 20002,type=1,scene="scene_3",operName="采集",pos_x = -76,pos_y=234,GiveList={{id=10006,num=1}}};
+}
+
+
+
+
+

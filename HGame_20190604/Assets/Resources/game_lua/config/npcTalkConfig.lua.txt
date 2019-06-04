@@ -1,0 +1,10 @@
+﻿--npc对话操作配置，id对应NPCid,用于配置NPC对话，任务等信息
+npcTalkList = {
+	{id = 101,normaltalk=101,QuestList={101,103}};
+	{id = 102,normaltalk=102,QuestList={102,104,105}};
+}
+
+
+
+
+

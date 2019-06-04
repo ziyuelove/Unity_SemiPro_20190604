@@ -1,0 +1,58 @@
+
+
+--楼层类，记录一层的房间及链接路径
+--地图单元格尺寸 100*100
+
+DungeonFloor = {}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+DungeonFloor.__index = DungeonFloor
+
+--构造体
+function DungeonFloor:New() 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, DungeonFloor);  --将self的元表设定为Class
+	return self;    --返回自身
+end
+
+--初始化类结构参数
+function DungeonFloor:init()
+	roomlist = {};   --房间列表
+	self.CurRoomIndex = 1;   --当前所在房间的列表下标
+	obj_floor = UnityEngine.GameObject('floor')
+end
+
+--创建一个房间
+function DungeonFloor:createRoom()
+	math.randomseed(os.time());
+	local NewRoom = DungeonRoom:New(1);
+	table.insert(roomlist,NewRoom);
+end
+
+--进入一个房间
+function DungeonFloor:InterRoom(Index)
+	if #roomlist<Index then
+		DungeonFloor:createRoom()
+	end
+	--先关闭当前房间的显示
+	if roomlist[self.CurRoomIndex] ~= nil then
+		roomlist[self.CurRoomIndex]:Close();
+	end
+	if #roomlist>=Index then
+		roomlist[Index]:Show(obj_floor);
+		self.CurRoomIndex = Index;
+	end
+end
+
+--获得当期所在房间的对象
+function DungeonFloor:CurRoom()
+	return self.roomlist[Index];
+end
+
+
+
+
+
+
+
+

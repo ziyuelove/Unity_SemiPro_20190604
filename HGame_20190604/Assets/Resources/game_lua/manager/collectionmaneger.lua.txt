@@ -1,0 +1,43 @@
+﻿
+--角色任务控制逻辑 
+collectionmaneger = {}
+
+collectionmaneger.collectionTime = 0;
+
+collectionmaneger.collectionlist={}
+function collectionmaneger.InitCollectionOnScene()
+	collectionmaneger.collectionlist={}
+	local CurSceneName = Game.GetGame():GetCurActiveScene();
+	for key, collection in pairs(collectionSceneList) do  
+		if collection.scene == CurSceneName then
+			collectionmaneger.createCollection(collection)
+		end
+	end 
+end
+
+function collectionmaneger.createCollection(collectiondata)
+	local collectiondataRes = ResourceManager.GetInstance():Load("Prefab/collection/collection_"..collectiondata.type);
+	local collection = UnityEngine.GameObject.Instantiate(collectiondataRes);
+	collection.name = collectiondata.id;
+	collection.gameObject.transform.position = Vector3.New(collectiondata.pos_x,collectiondata.pos_y,0);
+	LuaComponent.AddLuaComponent(collection,"collection/collectionAI.lua");
+end
+
+function collectionmaneger.AddCollection(name,classtabel)
+	collectionmaneger.collectionlist[name] = classtabel;
+end
+
+function collectionmaneger.FindCollection(name)
+	return collectionmaneger.collectionlist[name];
+end
+
+function collectionmaneger.FindCollectionConfigData(id)
+	for key, collection in pairs(collectionSceneList) do  
+		if collection.id == id then
+			return collection;
+		end
+	end 
+	return nil;
+end
+
+return collectionmaneger

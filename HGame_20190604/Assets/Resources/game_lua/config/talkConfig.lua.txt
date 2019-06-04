@@ -1,0 +1,130 @@
+﻿--任务列表
+--完成条件类型:1_与指定NPC对话
+--event类型: 0: 选择跳转的剧情 1:添加任务 2:删除任务 3:添加道具 4:删除道具 5:隐藏对话的NPC 6:完成任务
+talkList = {
+	{
+		talkid = 101,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",text="101对话"};
+		}
+	};
+	{
+		talkid = 102,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",text="102对话"};
+		}
+	};
+	{
+		talkid = 1001,
+		talktextlist={
+			{type = 1,head="0",name = "",text="前面有个大狗，还是等会再过去吧"};
+		}
+	};
+	{
+		talkid = 10001,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",text="10001对话1"};
+			{type = 1,head="101",name = "丽莎",text="10001对话2"};
+		}
+	};
+	{
+		talkid = 10002,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",text="你是新来的吗？"};
+			{type = 1,head="101",name = "丽莎",events={{type=5,event=101}},text="到村庄来找我把~~~"};
+		}
+	};
+	{
+		talkid = 10003,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",text="10003对话1"};
+			{type = 1,head="101",name = "丽莎",text="10003对话2"};
+		}
+	};
+	{
+		talkid = 10004,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",text="10004对话1"};
+			{type = 1,head="102",name = "爱伦",text="10004对话2"};
+		}
+	};
+	{
+		talkid = 10005,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",text="10005对话1"};
+			{type = 1,head="102",name = "爱伦",text="10005对话2"};
+		}
+	};
+	{
+		talkid = 10006,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",text="10006对话1"};
+			{type = 1,head="102",name = "爱伦",text="10006对话2"};
+		}
+	};
+	{
+		talkid = 10007,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",events={{type=0,text="考虑一下",event=10011};{type=0,text="非常乐意",event=10010}},text="你能帮我去爱伦哪里拿下我的洋娃娃吗？"};
+		}
+	};
+	{
+		talkid = 10008,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",text="我的洋娃娃是我最喜欢的生日礼物"};
+		}
+	};
+	{
+		talkid = 10009,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",text="你真是个大好人，以后记得常来找我玩哦~~~"};
+		}
+	};
+	{
+		talkid = 10010,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",events={{type=1,event=103};{type=1,event=104}},text="太好了，你去和爱伦对话，她就会给你我的洋娃娃"};
+		}
+	};
+	{
+		talkid = 10011,
+		talktextlist={
+			{type = 1,head="101",name = "丽莎",text="我真的很想要回我的洋娃娃~~~~~~"};
+		}
+	};
+	{
+		talkid = 10012,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",events={{type=0,text="考虑一下",event=10013};{type=0,text="非常乐意",event=10014}},text="她的洋娃娃在我这，不过我需要些鲜花装饰我的房间，你能帮我找2朵来吗？"};
+		}
+	};
+	{
+		talkid = 10013,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",text="帮我找2朵鲜花，我就给你洋娃娃"};
+		}
+	};
+	{
+		talkid = 10014,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",events={{type=2,event=104};{type=1,event=105}},text="鲜花可以在南面的树林里找到，快去吧"};
+		}
+	};
+	{
+		talkid = 10015,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",text="鲜花可以在南面的树林里找到，快去吧"};
+		}
+	};
+	{
+		talkid = 10016,
+		talktextlist={
+			{type = 1,head="102",name = "爱伦",text="太好了，这些鲜花真好看"};
+		}
+	};
+}
+
+
+
+
+

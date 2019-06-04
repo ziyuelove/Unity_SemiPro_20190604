@@ -1,0 +1,14 @@
+﻿--任务列表
+--完成条件类型:1_与指定NPC对话,2_需求道具
+questList = {
+	{id = 101,name = "对话丽莎",preQuest = 0,nextQuest=102,pretalk=10001,runingtalk=10002,endtalk=10003,conditions={{type = 1,target=101,value=101}},GiveList={{id=10005,num=1};{id=10003,num=1}}};
+	{id = 102,name = "对话爱伦",preQuest = 101,pretalk=10004,runingtalk=10005,endtalk=10006,conditions={{type = 1,target=102,value=102}},GiveList={{id=10002,num=1}}};
+	{id = 103,name = "丽莎的娃娃",preQuest = 101,pretalk=10007,runingtalk=10008,endtalk=10009,conditions={{type = 2,target=10007,value=1}},GiveList={{id=10004,num=1}}};
+	{id = 104,name = "要回丽莎的娃娃",preQuest = -1,pretalk=0,runingtalk=10012,endtalk=10012,conditions={{type = 1,target=102,value=102};{type = 2,target=-1,value=1}},GiveList={}};
+	{id = 105,name = "帮爱伦采集鲜花",preQuest = 104,pretalk=0,runingtalk=10015,endtalk=10016,conditions={{type = 2,target=10006,value=2}},GiveList={{id=10007,num=1}}};
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+﻿
+--角色任务控制逻辑 
+chestmaneger = {}
+
+chestmaneger.chestlist={}
+function chestmaneger.InitChestOnScene()
+	chestmaneger.chestlist={}
+	local CurSceneName = Game.GetGame():GetCurActiveScene();
+	for key, chest in pairs(chestSceneList) do  
+		if chest.scene == CurSceneName then
+			chestmaneger.createChest(chest)
+		end
+	end 
+end
+
+function chestmaneger.createChest(chestdata)
+	local chestRes = ResourceManager.GetInstance():Load("Prefab/chest/chest_"..chestdata.type);
+	local chest = UnityEngine.GameObject.Instantiate(chestRes);
+	chest.name = chestdata.id;
+	chest.gameObject.transform.position = Vector3.New(chestdata.pos_x,chestdata.pos_y,0);
+	LuaComponent.AddLuaComponent(chest,"chest/chestAI.lua");
+end
+
+function chestmaneger.AddChest(name,classtabel)
+	chestmaneger.chestlist[name] = classtabel;
+end
+
+function chestmaneger.FindChest(name)
+	return chestmaneger.chestlist[name];
+end
+
+function chestmaneger.FindChestConfigData(id)
+	for key, chest in pairs(chestSceneList) do  
+		if chest.id == id then
+			return chest;
+		end
+	end 
+	return nil;
+end
+
+return chestmaneger

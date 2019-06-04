@@ -1,0 +1,33 @@
+﻿
+--游戏时间(上午1，中午2，下午3，晚上4)
+GameTimeManeger = {}
+
+GameTimeManeger.curTime = 1;
+GameTimeManeger.curIndex = 0;
+
+--切换场景时时间加2
+function GameTimeManeger.AddTime()
+	GameTimeManeger.curIndex = GameTimeManeger.curIndex + 2;
+	GameTimeManeger.curIndex = math.modf(GameTimeManeger.curIndex % 24);
+	GameTimeManeger.curTime = math.modf(GameTimeManeger.curIndex/6)+1;
+end
+
+function GameTimeManeger.Reset()
+	GameTimeManeger.curTime = 0;
+	GameTimeManeger.curIndex = 0;
+end
+
+--切换场景时时间加2
+function GameTimeManeger.ResetNextTime()
+	GameTimeManeger.curTime = GameTimeManeger.curTime+1;
+	if GameTimeManeger.curTime > 4 then
+		 GameTimeManeger.curTime = 1;
+	end
+	GameTimeManeger.curIndex = (GameTimeManeger.curTime-1)*6;
+end
+
+function GameTimeManeger.GetCurTimeName()
+	return gametimeConfigList[GameTimeManeger.curTime].name;
+end
+
+return GameTimeManeger

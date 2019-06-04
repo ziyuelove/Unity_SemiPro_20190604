@@ -1,0 +1,104 @@
+﻿
+--角色基础控制逻辑 
+RoleAI = {}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+RoleAI.__index = RoleAI
+RoleAI.gameobect = nil
+
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function RoleAI:New() 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, RoleAI);  --将self的元表设定为Class
+	self.moveing = false;
+    return self;    --返回自身
+end
+
+--开始时调用
+function RoleAI:Start(gameobject) 
+	self.gameObject = gameobject;
+	--self.gameObject.transform.localScale = Vector3.New(1,1,1);
+	--self.gameObject.transform.localPosition = Vector3.New(0,0,0);
+	self.Nav = self.gameObject:GetComponent('PolyNavAgent');
+	self.Sprite = self.gameObject.transform:Find("Sprite");
+	self.Animator = self.Sprite:GetComponent('Animator');
+end
+
+function RoleAI:Update(gameobject)
+	if self.Nav.currentSpeed ~= 0 and not self.moveing then
+		self.Animator:Play("move");
+		self.moveing = true;
+	end
+
+	if self.moveing and self.Nav.currentSpeed == 0 then
+		self.Animator:Play("idle");
+		self.moveing = false;		
+		if self.gameObject == game.hero then
+			game.moveTo:SetActive(false);
+		end
+	end
+
+	self:RefreshDir();
+end
+
+function RoleAI:RefreshDir()
+	if self.moveing then
+		local nextPoint = self.Nav.nextPoint;
+		local Dir_x = nextPoint.x - self.gameObject.transform.position.x;
+		local Dir_y = nextPoint.y - self.gameObject.transform.position.y;
+
+		local x = math.abs(Dir_x);
+		local y = math.abs(Dir_y);
+		if Dir_x>0 then
+			Dir_x = 1;
+		else
+			Dir_x = -1;
+		end
+		if Dir_y>0 then
+			Dir_y = 1;
+		else
+			Dir_y = -1;
+		end
+		if x>y then
+			Dir_y = 0;
+		else
+			Dir_x = 0;
+		end
+		self.Animator:SetFloat("dir_x",Dir_x);
+		self.Animator:SetFloat("dir_y",Dir_y);
+	end
+end
+
+function RoleAI:OnCollisionEnter2D(coll)
+	if self.gameObject == game.hero then
+		if coll.gameObject.tag == "changeRgn" then
+			if not game.ToChangeRgn then
+				local NewRgn = coll.gameObject:GetComponent('SceneChangeRgn').strScene;
+				local NewPos = Vector2.New(coll.gameObject:GetComponent('SceneChangeRgn').pos_x,coll.gameObject:GetComponent('SceneChangeRgn').pos_y);
+				local PreQuest = coll.gameObject:GetComponent('SceneChangeRgn').PreQuest;
+				if PreQuest==0 or questmaneger.iscomplatedquest(PreQuest) then
+					--切换场景
+					Game.GetGame():LoadScene(NewRgn);
+					game.scenePos = NewPos;
+					game.ToChangeRgn = true;
+					GameTimeManeger.AddTime();
+				else
+					gamectrl.movestop();
+					gamectrl.ClearKeyMove();
+					gamectrl.Animator:Play("idle");
+					talkmaneger.StartTalk(1001);
+				end
+			else
+				game.ToChangeRgn = false;
+			end
+		end
+	end
+end
+
+return RoleAI
+
+
+
+
+

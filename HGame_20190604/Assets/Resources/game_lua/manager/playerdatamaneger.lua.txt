@@ -1,0 +1,28 @@
+﻿
+--角色游戏数据逻辑 
+playerdatamaneger = {}
+
+playerdatamaneger.npcGivelist={}
+
+function playerdatamaneger.addNPCGive(npcid,value)
+	local id = tonumber(npcid);
+	local npcGive = playerdatamaneger.findNPCGive(id);
+	if npcGive==nil then
+		npcGive = {};
+		npcGive.id = id;
+		npcGive.value = 0;
+		table.insert (playerdatamaneger.npcGivelist,npcGive);
+	end
+	npcGive.value = npcGive.value + value;
+end
+
+function playerdatamaneger.findNPCGive(npcid)
+	for key, npcGive in pairs(playerdatamaneger.npcGivelist) do  
+		if npcGive.id == npcid then
+			return npcGive;
+		end
+	end 
+	return nil;
+end
+
+return playerdatamaneger

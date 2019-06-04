@@ -1,0 +1,52 @@
+
+
+--房间类，记录该房间的地图ID，类型
+
+DungeonRoom = {roomtype = -1}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+DungeonRoom.__index = DungeonRoom
+
+
+--构造体
+function DungeonRoom:New(RoomType) 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, DungeonRoom);  --将self的元表设定为Class
+	self.roomtype = RoomType;		  --房间类型
+	self:Init();
+	return self;    --返回自身
+end
+function DungeonRoom:Init()
+end
+
+
+--修改设置房间类型
+function DungeonRoom:SetRoomType(RoomType)
+
+end
+
+--显示房间
+function DungeonRoom:Show(pearent)
+	--Debug.Log("创建房间对象:"..id);
+	if self.roomobj == nil then
+		--Debug.Log("创建房间对象--------:"..self.id);
+		local roomRes = ResourceManager.GetInstance():Load("Prefab/b_room");
+		self.roomobj = UnityEngine.GameObject.Instantiate(roomRes);
+		self.roomobj.name = tostring(self.id);
+		self.roomobj.transform:SetParent(pearent.transform);
+		self.roomobj.transform.localPosition = Vector3.New(0,0,0);
+	else 
+		self.roomobj.active = true;
+	end
+end
+
+--关闭房间
+function DungeonRoom:Close()
+	if self.roomobj ~= nil then
+		self.roomobj.active = false;
+	end
+end
+
+
+
+

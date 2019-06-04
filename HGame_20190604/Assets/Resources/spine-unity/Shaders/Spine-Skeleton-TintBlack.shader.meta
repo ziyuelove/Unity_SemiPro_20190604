@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 712c99bacbabf1d40b22bd024185c87c
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: spine-unity/shaders/spine-skeleton-tintblack.data
+  assetBundleVariant: 

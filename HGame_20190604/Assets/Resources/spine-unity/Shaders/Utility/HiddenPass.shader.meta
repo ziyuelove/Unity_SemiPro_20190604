@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: cfeab223cb87cff4f9d83e470d3f43bd
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: spine-unity/shaders/utility/hiddenpass.data
+  assetBundleVariant: 

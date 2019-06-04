@@ -1,0 +1,93 @@
+﻿
+--角色任务控制逻辑 
+itemmaneger = {}
+
+itemmaneger.itemlist = {};
+
+
+function itemmaneger.GetItemConfig(id)
+	for key, value in pairs(itemConfigList) do 
+		if value.id == id then
+			return value;
+		end
+	end
+	return nil;
+end
+
+function itemmaneger.addItem(id)
+	local _item = itemmaneger.findItem(id);
+	if _item == nil or not _item.add then
+		_item = item:New(id);
+		table.insert (itemmaneger.itemlist,_item);
+	else
+		_item.num = _item.num+1;
+	end
+	questmaneger.refreshAllquest(2,id,1);   --刷新该道具的关联任务
+end
+
+function itemmaneger.delItem(id,num)
+	local curNum = 0;
+	local Index = 1;
+	for key, value in pairs(itemmaneger.itemlist) do 
+		if value.id == id and curNum < num then
+			questmaneger.refreshAllquest(2,id,-1);
+			if value.num >num then
+				value.num = value.num - num;
+				curNum = num;
+				return;
+			else
+				curNum = curNum + value.num;
+				table.remove (itemmaneger.itemlist, Index);
+			end
+		end
+		Index = Index+1;
+	end
+end
+
+function itemmaneger.delItemByGuid(guid,num)
+	local curNum = 0;
+	local Index = 1;
+	for key, value in pairs(itemmaneger.itemlist) do 
+		if value.guid == guid and curNum < num then
+			questmaneger.refreshAllquest(2,id,-1);
+			if value.num >num then
+				value.num = value.num - num;
+				curNum = num;
+				return;
+			else
+				table.remove (itemmaneger.itemlist, Index);
+			end
+		end
+		Index = Index+1;
+	end
+end
+
+function itemmaneger.findItem(id)
+	for key, value in pairs(itemmaneger.itemlist) do 
+		if value.id == id then
+			return value;
+		end
+	end
+	return nil;	
+end
+
+function itemmaneger.GetItemNum(id)
+	local num = 0;
+	for key, value in pairs(itemmaneger.itemlist) do 
+		if value.id == id then
+			num = num + value.num;
+		end
+	end
+	return num;	
+end
+
+function itemmaneger.getItem(guid)
+	for key, value in pairs(itemmaneger.itemlist) do 
+		if value.guid == guid then
+			return value;
+		end
+	end
+	return nil;	
+end
+
+return itemmaneger

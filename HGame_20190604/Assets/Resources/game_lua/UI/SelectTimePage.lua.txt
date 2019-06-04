@@ -1,0 +1,67 @@
+--Author : Administrator
+--Date   : 2018/11/20
+
+--声明，这里声明了类名还有属性，并且给出了属性的初始值。
+SelectTimePage = {}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+SelectTimePage.__index = SelectTimePage
+SelectTimePage.gameobect = nil
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function SelectTimePage:New() 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, SelectTimePage);  --将self的元表设定为Class
+    return self;    --返回自身
+end
+
+function SelectTimePage:LuaInit(LuaTable)
+	self.LuaTable = LuaTable;
+end
+
+--开始时调用
+function SelectTimePage:Start(gameobject) 
+	game.OpenPage = true;
+	self.gameobect = gameobject;
+	self.gameobect.transform.localScale = Vector3.New(1,1,1);
+	self.gameobect.transform.localPosition = Vector3.New(0,0,0);
+
+	local Btn_Cancel = self.gameobect.transform:Find("Cancel") ;
+	EventTriggerListener.Get(Btn_Cancel.gameObject).OnClickCall = "OnClose";
+	EventTriggerListener.Get(Btn_Cancel.gameObject):OnSetLuaTable(self.LuaTable);
+
+	local Btn_Sure = self.gameobect.transform:Find("Sure") ;
+	EventTriggerListener.Get(Btn_Sure.gameObject).OnClickCall = "OnAddTime";
+	EventTriggerListener.Get(Btn_Sure.gameObject):OnSetLuaTable(self.LuaTable);
+
+	return gameobject;
+end
+
+function SelectTimePage:OnClose(gameobject)
+	--game.OpenPage = false
+	UnityEngine.GameObject.Destroy(self.gameobect);
+	return gameobject;
+end
+
+function SelectTimePage:OnAddTime(gameobject)
+	game.OpenUI("UI/BlackPage");	
+	self.gameobect:GetComponent("LuaComponent"):OnTimer("ChangeTime",0.5);
+	return gameobject;
+end
+
+function SelectTimePage:ChangeTime()
+	self:OnClose(gameobject);
+	GameTimeManeger.ResetNextTime();
+	game.MainUI:RefreshGameTime();
+end
+
+
+function SelectTimePage.Update()
+end
+
+
+
+
+return SelectTimePage
+
+--endregion

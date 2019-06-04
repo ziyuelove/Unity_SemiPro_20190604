@@ -1,0 +1,12 @@
+﻿--游戏时间设置
+gametimeConfigList = {
+	{name = "早上"};
+	{name = "中午"};
+	{name = "下午"};
+	{name = "晚上"};
+}
+
+
+
+
+

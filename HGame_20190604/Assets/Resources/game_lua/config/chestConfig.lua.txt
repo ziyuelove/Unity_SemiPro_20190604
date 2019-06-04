@@ -1,0 +1,10 @@
+﻿--宝箱列表，场景上宝箱的基本信息
+chestSceneList = {
+	{id = 10001,type=1,scene="scene_3",pos_x = -2119,pos_y=407,GiveList={{id=10005,num=1}}};
+	{id = 10002,type=1,scene="scene_3",pos_x = -176,pos_y=204,GiveList={{id=10005,num=1}}};
+}
+
+
+
+
+

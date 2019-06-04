@@ -1,0 +1,66 @@
+--Author : Administrator
+--Date   : 2014/11/25
+
+--声明，这里声明了类名还有属性，并且给出了属性的初始值。
+--这是一个建筑的对象，包含基本的显示和位置信息
+Build= {id = "0000-0000-0000-00000",type = 0,position = Vector2.zero,gameObject}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+Build.__index = Build
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function Build:New(type) 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, Build);  --将self的元表设定为Class
+    self.type = type;
+	self.id = Game.GetGame():GetNewGuid();
+	self.Role = 3;
+    return self;    --返回自身
+end
+
+function Build:Init()
+	local BuildRes = nil;
+	if self.type == 0 then
+		BuildRes = ResourceManager.GetInstance():Load("Prefab/build/Build_"..self.type);
+	else
+		BuildRes = ResourceManager.GetInstance():Load("Prefab/build/Build_S");
+	end
+	if BuildRes ~=nil then
+		self.gameObject = UnityEngine.GameObject.Instantiate(BuildRes);
+		self.gameObject.name = self.id;
+		if self.type ~= 0 then
+			local spriteImage = ResourceManager.GetInstance():LoadSprite("Texture/bulid1/"..self.type);
+			self.gameObject:GetComponent("SpriteRenderer").sprite = spriteImage;
+			LuaComponent.AddLuaComponent(self.gameObject,"Build/BuildComp.lua");
+		end
+	else
+		print("一个空的资源:"..self.type);
+	end
+	self.door = self.gameObject.transform:Find("door");
+	self.AITime = Game.GetGame():GetTime();
+end
+
+function Build:SetPosition(Pos)
+	self.position = Pos;
+	self.gameObject.transform.position = Pos;
+end
+
+function Build:RefreshPosition()
+	self.position = self.gameObject.transform.position;
+end
+
+function Build:ResetPosition()
+	self.gameObject.transform.position = self.position;
+end
+
+function Build:Update()
+	--if (Game.GetGame():GetTime() - self.AITime)>2 then
+		--self.AITime = Game.GetGame():GetTime();
+		--if self.Role>0 and not gamectrl.Editor then
+			--self.Role = self.Role - 1;
+			--sceneNpcManager.CreateNpc(1,self);
+		--end
+	--end
+end
+
+--endregion

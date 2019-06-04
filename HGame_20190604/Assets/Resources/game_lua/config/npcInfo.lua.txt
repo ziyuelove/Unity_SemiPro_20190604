@@ -1,0 +1,10 @@
+﻿--npc列表，场景上NPC的基本信息
+npcInfoList = {
+	{id = 101,name = "丽莎"};
+	{id = 102,name = "爱伦"};
+}
+
+
+
+
+

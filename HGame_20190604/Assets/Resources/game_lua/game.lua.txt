@@ -1,0 +1,146 @@
+
+game = {}
+
+game.gamestate = 0;
+
+game.hero = nil;
+game.MainCamera = nil
+
+EnumCtrlState = nil;
+
+game.cameraFollow = true;
+game.camaraGo = false;
+game.camaraGoPos = Vector3.New(0,0,0);
+
+game.OpenPage = false;
+
+game.firstInter = true;
+
+function game.Start()
+	 Game.GetGame():LoadScene("login") ;
+
+end
+
+--切换Scene后回调
+function game.OnLevelWasLoaded(level)
+	print("切换Scene成功!!!");
+	if game.gamestate == 0 then
+		--Game.GetGame():OpenUI("UI/LoginPage","LoginPage");
+		game.OpenUI("UI/LoginPage");
+		game.gamestate = 1;
+		game.ToChangeRgn = false;
+	elseif game.gamestate == 1 or game.gamestate == 2 then
+		game.gamestate = 2;    --已进入游戏场景
+		game.sceneinit();
+	else
+		
+	end
+	return Level
+end
+
+--开始场景时先初始化
+function game.sceneinit()
+	--初始化英雄
+	local heroRes = ResourceManager.GetInstance():Load("Prefab/npc/Role_1");
+	game.hero = UnityEngine.GameObject.Instantiate(heroRes);
+	if game.scenePos==nil then
+		game.hero.transform.position = Vector3.New(870,345,0);
+	else
+		game.hero.transform.position = game.scenePos;
+	end
+
+	local moveToRes = ResourceManager.GetInstance():Load("Prefab/moveto");
+	game.moveTo = UnityEngine.GameObject.Instantiate(moveToRes);
+	game.moveTo:SetActive(false);
+	--game.hero.transform.position = Vector3.New(7.15,-5.7,0);
+	LuaComponent.AddLuaComponent(game.hero,"Ctrl/RoleAI.lua");
+
+	if game.firstInter then
+		questmaneger.add(101);
+
+		game.firstInter = false;
+	end
+
+	--初始化摄像机
+	--game.MainCamera = UnityEngine.GameObject.Find("Main Camera");
+
+	if UnityEngine.GameObject.Find("CM vcam1")~=nil then
+		UnityEngine.GameObject.Find("CM vcam1"):GetComponent("CinemachineVirtualCamera").Follow = game.hero.transform;
+	end
+
+	game.OpenUI("UI/MainUI");
+
+	print("添加主操作界面");
+
+	--创建NPC在场景上
+	sceneNpcManager.init()
+
+	chestmaneger.InitChestOnScene();
+	collectionmaneger.InitCollectionOnScene();
+	--game.TestCortinue();
+	gamectrl.init();
+end
+
+--游戏循环
+function game.Update()
+	--if game.hero ~= nil then
+	--	heroctrl.Update();
+	--end
+	--game.CameraFollow();
+	--sceneNpcManager.update();
+
+	gamectrl.update();
+	--if not gamectrl.Editor then
+	--	sceneBuildManager.Update();
+	--	sceneNpcManager.update();
+	--end
+end
+
+function game.CameraFollow()
+	if game.MainCamera ~=nil and game.hero ~= nil then
+		game.cameraPos = Vector3.Lerp(game.cameraPos,game.hero.transform.position,0.2);
+		--game.MainCamera.transform.position = Vector3.New(game.MainCamera.transform.position.x,game.MainCamera.transform.position.y,-10);
+		game.MainCamera.transform.position = Vector3.New(math.modf(game.cameraPos.x),math.modf(game.cameraPos.y),-10);
+	end
+end
+
+--触发切换场景时调用
+function game.OnChangeRgn(scenePos)
+	game.scenePos = scenePos;
+end
+
+
+--打开界面通用接口
+function game.OpenUI(UIName)
+	local Path = "Prefab/"..UIName;
+	local PageRes = ResourceManager.GetInstance():Load(Path);
+	game.CtrlPage = UnityEngine.GameObject.Instantiate(PageRes);
+	UICanvas = UnityEngine.GameObject.Find("Canvas");
+	if UICanvas~= nil then
+		game.CtrlPage.transform:SetParent(UICanvas.transform);
+		local UILua = UIName..".lua";
+		LuaComponent.AddLuaComponent(game.CtrlPage,UILua);
+		print("游戏操作界面~~~~~");
+	else 
+		print("游戏操作界面错误~~~~~");
+	end
+end
+
+------------测试lua协程函数 start
+function game.CoFunc()
+    print('Coroutine started')                
+    local i = 0;
+    for i = 0, 10, 1 do                    
+       print('++++++++++++++++++++++++++++++++++:'..i);
+	   WaitForSeconds(1);
+	   Yield(0);                           
+    end
+    print('Coroutine ended')
+end
+
+function game.TestCortinue()	
+    StartCoroutine(game.CoFunc)
+end
+------------测试lua协程函数 end
+  
+

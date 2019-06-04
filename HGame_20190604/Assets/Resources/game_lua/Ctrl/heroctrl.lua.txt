@@ -1,0 +1,172 @@
+﻿
+--角色基础控制逻辑 
+heroctrl = {}
+
+heroctrl.lookdir = Vector2.New(0,0);
+
+heroctrl.movedir = Vector3.New(0,0,0);
+heroctrl.moveing = false;
+heroctrl.movespeed = 2;
+
+heroctrl.JoyCtrl = 0;
+heroctrl.KeyCtrl = 0;
+
+
+
+function heroctrl.Init()
+	heroctrl.JoyCtrl = 0;
+	heroctrl.KeyCtrl = 0;
+end
+
+function heroctrl.Update()
+	heroctrl.OnMove();
+end
+
+function heroctrl.GetHeroSpine()
+	return game.hero.transform:Find("spine"):GetComponent('SkeletonAnimation').state;
+end
+
+function heroctrl.GetHeroCollider()
+	return game.hero.transform:Find("collider");
+end
+
+function heroctrl.CheckInputEvent()
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.A) then
+		heroctrl.OnMoveStart();
+		game.hero.transform.localScale = Vector3.New(-1,1,1);
+		heroctrl.movedir.x = -1;
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.A) then
+		if UnityEngine.Input.GetKey(UnityEngine.KeyCode.D) then
+			game.hero.transform.localScale = Vector3.New(1,1,1);
+			heroctrl.movedir.x = 1;
+		else
+			heroctrl.movedir.x = 0;
+		end
+	end
+
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.D) then
+		heroctrl.OnMoveStart();
+		game.hero.transform.localScale = Vector3.New(1,1,1);
+		heroctrl.movedir.x = 1;
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.D) then
+		if UnityEngine.Input.GetKey(UnityEngine.KeyCode.A) then
+			heroctrl.movedir.x = -1;
+			game.hero.transform.localScale = Vector3.New(-1,1,1);
+		else
+			heroctrl.movedir.x = 0;
+		end
+	end
+
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.W) then
+		heroctrl.OnMoveStart();
+		heroctrl.movedir.y = 1;
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.W) then
+		if UnityEngine.Input.GetKey(UnityEngine.KeyCode.S) then
+			heroctrl.movedir.y = -1;
+		else
+			heroctrl.movedir.y = 0;
+		end
+	end
+
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.S) then
+		heroctrl.OnMoveStart();
+		heroctrl.movedir.y = -1;
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.S) then
+		if UnityEngine.Input.GetKey(UnityEngine.KeyCode.W) then
+			heroctrl.movedir.y = 1;
+		else
+			heroctrl.movedir.y = 0;
+		end
+	end
+
+	if heroctrl.moveing
+	 and heroctrl.JoyCtrl == 0
+	 and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.A)
+	 and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.D)
+	 and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.W)
+	 and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.S) then
+		heroctrl.OnMoveEnd();
+	end
+
+	if not UnityEngine.Input.GetKey(UnityEngine.KeyCode.A)
+	   and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.D)
+	   and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.W)
+	   and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.S) then
+		 heroctrl.KeyCtrl = 1;
+	else
+		 heroctrl.KeyCtrl = 0;
+	end
+end
+
+function heroctrl.OnMoveStart()
+	heroctrl.moveing = true;
+	heroctrl.GetHeroSpine():SetAnimation(0,"run",true);
+end
+
+function heroctrl.OnMove()	
+	if heroctrl.moveing then
+		local TempMoveDir = Vector3.New(0,0,0);
+		if heroctrl.movedir.x ~= 0 and not Game.GetGame():GetRay(heroctrl.GetHeroCollider().position,Vector2.New(heroctrl.movedir.x,0),0.2,8) then
+			TempMoveDir.x = heroctrl.movedir.x;
+		end
+		if heroctrl.movedir.y ~= 0 and not Game.GetGame():GetRay(heroctrl.GetHeroCollider().position,Vector2.New(0,heroctrl.movedir.y),0.1,8) then
+			TempMoveDir.y = heroctrl.movedir.y;
+		end	
+			
+		game.hero.transform.position = game.hero.transform.position+TempMoveDir*heroctrl.movespeed*Game.GetGame():GetDeltaTime();
+	end
+end
+
+function heroctrl.OnMoveEnd()
+	heroctrl.moveing = false;
+	heroctrl.GetHeroSpine():SetAnimation(0,"idle",true);
+end
+
+
+--用于摇杆的检测
+function heroctrl.SetMoveDir_X(Joydir)
+	if  heroctrl.KeyCtrl == 0 then
+		heroctrl.movedir.x = Joydir[0];
+		heroctrl.lookdir.x = Joydir[0];
+		if Joydir[0]~=0 then
+			game.hero.transform.localScale = Vector3.New(Joydir[0],1,1);
+			if not heroctrl.moveing then
+				heroctrl.OnMoveStart();
+				heroctrl.JoyCtrl = 1;
+			end
+		elseif heroctrl.moveing then
+			if heroctrl.movedir.x == 0 and  heroctrl.movedir.y == 0 then
+				heroctrl.OnMoveEnd();
+				heroctrl.JoyCtrl = 0;
+			end
+		end
+	end
+	return Joydir;
+end
+
+--用于摇杆的检测
+function heroctrl.SetMoveDir_Y(Joydir)
+	if heroctrl.KeyCtrl == 0 then
+		heroctrl.movedir.y = Joydir[0];
+		heroctrl.lookdir.y = Joydir[0];
+		if Joydir~=0 then
+			if not heroctrl.moveing then
+				heroctrl.OnMoveStart();
+				heroctrl.JoyCtrl = 1;
+			end
+		elseif heroctrl.moveing then
+			if heroctrl.movedir.x == 0 and  heroctrl.movedir.y == 0 then
+				if not heroctrl.KeyCtrl then
+					heroctrl.OnMoveEnd();
+				end
+				heroctrl.JoyCtrl = 0;
+			end
+		end
+	end
+	return Joydir;
+end
+
+
+
+
+

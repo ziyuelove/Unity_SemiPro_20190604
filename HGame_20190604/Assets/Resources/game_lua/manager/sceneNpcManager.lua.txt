@@ -1,0 +1,90 @@
+﻿--用于管理场景上的NPC
+
+sceneNpcManager = {}
+sceneNpcManager.npclist = {};
+
+
+function sceneNpcManager.CreateNpcForScene()
+	local CurSceneName = Game.GetGame():GetCurActiveScene();
+	for key, value in pairs(npcSceneList) do  
+		local posdata = {};
+		for key, pos_value in pairs(value.Pos) do
+			if pos_value.quest==0 or questmaneger.iscomplatedquest(pos_value.quest) then
+				posdata.scene = pos_value.scene;
+				posdata.pos_x = pos_value.pos_x;
+				posdata.pos_y = pos_value.pos_y;
+				print("场景NPC可判断:"..value.id.."    "..posdata.scene);
+			end
+		end
+		print("判断当前场景:"..posdata.scene.."    "..CurSceneName);
+		if posdata.scene == CurSceneName then
+			print("添加NPC:"..value.id);
+			local Npc = NPC:New(value.id);
+			NPC:SetStartPosition(posdata);
+			Npc:Init();
+			table.insert (sceneNpcManager.npclist,Npc);
+		end
+	end 
+end
+
+function sceneNpcManager.DelNpc(Npcid)
+	local pos = 1;
+	for key, value in pairs(sceneNpcManager.npclist) do   
+		if value.id == Npcid then
+			value:Delete();
+			table.remove (sceneNpcManager.npclist, pos);
+		end
+		pos = pos+1;
+	end 
+end
+
+--进入编辑模式，删除场景上的所有NPC
+function sceneNpcManager.EnterEditor()
+	print("进入编辑模式，删除场景上的NPC");
+	for key, value in pairs(sceneNpcManager.npclist) do 
+		if value.bOut then
+			value.gameObject:SetActive(false);
+		end
+	end 
+end
+
+function sceneNpcManager.ExitEditor()
+	print("进入编辑模式，删除场景上的NPC");
+	for key, value in pairs(sceneNpcManager.npclist) do   
+		if value.bOut then
+			value.gameObject:SetActive(true);
+		end
+	end 
+end
+
+function sceneNpcManager.GetNpcConfigData(NpcId)
+	for key, value in pairs(npcSceneList) do   
+		print("++++++++++++++++++++++:"..value.id.."    "..NpcId);
+		if tonumber(value.id) == tonumber(NpcId) then
+			return value;
+		end
+	end 
+	return nil;
+end
+
+function sceneNpcManager.GetNpcTalkConfigData(NpcId)
+	for key, value in pairs(npcTalkList) do   
+		if tonumber(value.id) == tonumber(NpcId) then
+			return value;
+		end
+	end 
+	return nil;
+end
+
+function sceneNpcManager.init()
+	sceneNpcManager.npclist = {};
+	sceneNpcManager.CreateNpcForScene();
+end
+
+function sceneNpcManager.update()
+	for key, value in pairs(sceneNpcManager.npclist) do   
+	end 
+end
+
+
+

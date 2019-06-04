@@ -1,0 +1,16 @@
+
+--地图生成管理类,用于生成和管理每一层的地图
+
+DungeonMap = {}
+
+--初始化/重设参数
+function DungeonMap.Init()
+
+end
+
+--创建一层的数据
+function DungeonMap.CreateFloor()
+
+end
+
+

@@ -1,0 +1,47 @@
+--Author : Administrator
+--Date   : 2018/11/20
+
+--声明，这里声明了类名还有属性，并且给出了属性的初始值。
+GetItemPage = {}
+
+GetItemPage.CurItemList = {}
+
+function GetItemPage.Additem(id,num)
+	local itemdata = {};
+	itemdata.id = id;
+	itemdata.num = num;
+	table.insert (GetItemPage.CurItemList,itemdata);
+end
+
+function GetItemPage.StartShow()
+	StartCoroutine(GetItemPage.CoFunc)
+end
+
+function GetItemPage.CoFunc()                
+    local i = 0;
+    for key, value in pairs(GetItemPage.CurItemList) do                
+       --显示一个道具信息
+	   print("添加道具:"..value.id);
+	   GetItemPage.refreshItem(value)
+	   WaitForSeconds(0.5);
+	   Yield(0);                           
+    end
+	GetItemPage.CurItemList = {};
+end
+
+function GetItemPage.refreshItem(itemData)
+	local ItemRes = ResourceManager.GetInstance():Load("Prefab/UI/GetItem");
+	local item = UnityEngine.GameObject.Instantiate(ItemRes);
+	UICanvas = UnityEngine.GameObject.Find("Canvas");
+	if UICanvas~= nil then
+		item.transform:SetParent(UICanvas.transform);
+	end
+	local UIPos = Game.GetGame():World2UI(game.hero.transform.position);
+	item.transform.position = UIPos+Vector3.New(0,50,0);
+	local itemConfig = itemmaneger.GetItemConfig(itemData.id)
+	local spriteImage = ResourceManager.GetInstance():LoadSprite("Texture/item/"..itemData.id);
+	item.transform:Find("note/Image"):GetComponent("Image").sprite = spriteImage;
+	item.transform:Find("note/Text"):GetComponent("Text").text = itemConfig.name.."×"..itemData.num;
+	
+end
+--endregion

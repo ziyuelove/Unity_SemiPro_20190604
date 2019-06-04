@@ -1,0 +1,11 @@
+
+
+monsterManager = {}
+monsterManager.monsterlist = {};
+
+function monsterManager.createMonster()
+	local monsterRes = ResourceManager.GetInstance():Load("Prefab/soldier");
+	monsterRes = UnityEngine.GameObject.Instantiate(monsterRes);
+
+	monsterRes.transform.position = Vector3.New(10,-2.8,-1);
+end

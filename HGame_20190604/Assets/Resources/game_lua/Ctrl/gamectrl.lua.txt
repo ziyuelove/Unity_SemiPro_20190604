@@ -1,0 +1,296 @@
+﻿
+--角色基础控制逻辑 
+gamectrl = {}
+
+gamectrl.touchObj = nil;
+
+gamectrl.Editor = false;   --建筑编辑模式
+
+gamectrl.Move = false;
+gamectrl.Dir = Vector3.New(0,0,0);
+gamectrl.Animator = nil;
+gamectrl.CurKey = nil;
+gamectrl.keycodeList = {};
+gamectrl.bctrl = true; 
+
+function gamectrl.init()
+	gamectrl.ClearKeyMove();
+	local Res = ResourceManager.GetInstance():Load("Prefab/touch");
+	gamectrl.touchObj = UnityEngine.GameObject.Instantiate(Res);
+	LuaComponent.AddLuaComponent(gamectrl.touchObj,"Ctrl/touchctrl.lua");
+
+	
+	local heroSprite = game.hero.gameObject.transform:Find("Sprite");
+	gamectrl.Animator = heroSprite:GetComponent('Animator');
+end
+
+function gamectrl.update()
+	if UnityEngine.Input.GetMouseButtonDown(0) and game.hero~=nil and not game.OpenPage then
+		if Game.GetGame():GetEventSystemOverGameObject() then
+			return;
+		end
+		local  worldPos = UnityEngine.Camera.main:ScreenToWorldPoint(UnityEngine.Input.mousePosition);
+		local maptile = Game.GetGame():GetMapTile(worldPos);
+	end
+	if gamectrl.bctrl then
+		gamectrl.OnKeyInput();
+		gamectrl.OnMoveing();
+		gamectrl.OnTalkKeyEvent();
+	end
+end
+
+function gamectrl.moveTo(targetPos)
+	if game.hero:GetComponent('PolyNavAgent')~=nil then
+		game.hero:GetComponent('PolyNavAgent'):SetDestination(targetPos);
+	end
+end
+
+function gamectrl.setNavStopDistance(stopDistance)
+	if game.hero:GetComponent('PolyNavAgent')~=nil then
+		game.hero:GetComponent('PolyNavAgent').stoppingDistance=stopDistance;
+	end
+end
+
+function gamectrl.setNavCallBack(strcallback)
+	if game.hero:GetComponent('PolyNavAgentCallback') ~=nil then
+		game.hero:GetComponent('PolyNavAgentCallback'):SetNavCallBack(strcallback);
+	end
+end
+
+function gamectrl.movestop()
+	if game.hero:GetComponent('PolyNavAgent')~=nil then
+		game.hero:GetComponent('PolyNavAgent'):Stop();
+	end
+end
+
+function gamectrl.ontalkboxpage()
+	--talkmaneger.onNpcTalk();
+	NPCTalkPage.Open();
+end
+
+function gamectrl.onOpenchest()
+	local chest = chestmaneger.FindChest(gamectrl.selectchest);
+	if chest~=nil then
+		chest:Open();
+		gamectrl.selectchest = nil;
+	else
+		print("没有找到宝箱:"..gamectrl.selectchest);
+	end
+end
+
+
+function gamectrl.onOpencollection()
+	local collection = collectionmaneger.FindCollection(gamectrl.selectcollection);
+	if collection~=nil then
+		collection:Open();
+		gamectrl.selectcollection = nil;
+	else
+		print("没有找到采集物:"..gamectrl.selectcollection);
+	end
+end
+
+function gamectrl.onOpenResetTime()
+	if not game.OpenPage then
+		game.OpenUI("UI/SelectTimePage");
+	end
+end
+
+function gamectrl.AddKey(keyCode)
+	if gamectrl.FindKey(keyCode) then
+		gamectrl.DelKey(keyCode)
+	end
+	table.insert (gamectrl.keycodeList,keyCode);
+end
+
+function gamectrl.DelKey(keyCode)
+	local pos = 1;
+	for key, value in pairs(gamectrl.keycodeList) do   
+		if value == keyCode then
+			table.remove (gamectrl.keycodeList, pos);
+			return;
+		end
+		pos = pos + 1;
+	end
+end
+
+function gamectrl.FindKey(keyCode)
+	for key, value in pairs(gamectrl.keycodeList) do   
+		if value == keyCode then			
+			return true;
+		end
+	end
+	return false;
+end
+
+function gamectrl.OnKeyInput()
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.A) then
+		gamectrl.AddKey(UnityEngine.KeyCode.A);
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.A) then
+		gamectrl.DelKey(UnityEngine.KeyCode.A);
+	end
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.D) then
+		gamectrl.AddKey(UnityEngine.KeyCode.D);
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.D) then
+		gamectrl.DelKey(UnityEngine.KeyCode.D);
+	end
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.W) then
+		gamectrl.AddKey(UnityEngine.KeyCode.W);
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.W) then
+		gamectrl.DelKey(UnityEngine.KeyCode.W);
+	end
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.S) then
+		gamectrl.AddKey(UnityEngine.KeyCode.S);
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.S) then
+		gamectrl.DelKey(UnityEngine.KeyCode.S);
+	end
+
+	if table.getn (gamectrl.keycodeList)>0 then
+		local ListLength = table.getn (gamectrl.keycodeList);
+		gamectrl.CurKey = gamectrl.keycodeList[ListLength];
+		if gamectrl.CurKey == UnityEngine.KeyCode.A then
+			gamectrl.Dir = Vector3.New(-1,0,0);
+			gamectrl.Animator:SetFloat("dir_x",-1);
+			gamectrl.Animator:SetFloat("dir_y",0);
+			gamectrl.movestop()
+			if not gamectrl.Move then
+				gamectrl.Animator:Play("move");
+				gamectrl.Move = true;
+			end
+		elseif gamectrl.CurKey == UnityEngine.KeyCode.D then
+			gamectrl.Dir = Vector3.New(1,0,0);			
+			gamectrl.Animator:SetFloat("dir_x",1);
+			gamectrl.Animator:SetFloat("dir_y",0);
+			gamectrl.movestop()
+			if not gamectrl.Move then
+				gamectrl.Animator:Play("move");
+				gamectrl.Move = true;
+			end
+		elseif gamectrl.CurKey == UnityEngine.KeyCode.W then
+			gamectrl.Dir = Vector3.New(0,1,0);
+			gamectrl.Animator:SetFloat("dir_x",0);
+			gamectrl.Animator:SetFloat("dir_y",1);
+			gamectrl.movestop()
+			if not gamectrl.Move then
+				gamectrl.Animator:Play("move");
+				gamectrl.Move = true;
+			end
+		elseif gamectrl.CurKey == UnityEngine.KeyCode.S then
+			gamectrl.Dir = Vector3.New(0,-1,0);
+			gamectrl.Animator:SetFloat("dir_x",0);
+			gamectrl.Animator:SetFloat("dir_y",-1);
+			gamectrl.movestop()
+			if not gamectrl.Move then
+				gamectrl.Animator:Play("move");
+				gamectrl.Move = true;
+			end
+		end
+	elseif UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.A) or UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.D) or
+		UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.W) or UnityEngine.Input.GetKeyUp(UnityEngine.KeyCode.S) then
+		gamectrl.Move = false;
+		gamectrl.Animator:Play("idle");
+		gamectrl.CurKey = nil;
+	end
+
+	if not UnityEngine.Input.GetKey(UnityEngine.KeyCode.A) and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.D) and
+	   not UnityEngine.Input.GetKey(UnityEngine.KeyCode.W) and not UnityEngine.Input.GetKey(UnityEngine.KeyCode.S) then
+		gamectrl.ClearKeyMove()
+	end
+end
+
+function gamectrl.OnMoveing()
+	if gamectrl.Move then
+		 game.hero.transform.position = game.hero.transform.position  + gamectrl.Dir * Game.GetGame():GetDeltaTime()*game.hero:GetComponent('PolyNavAgent').maxSpeed;
+	end
+end
+
+function gamectrl.ClearKeyMove()
+	gamectrl.Move = false;
+	gamectrl.keycodeList = {};
+end
+
+function gamectrl.OnTalkEvent(coll)
+	if coll.gameObject.tag == "npc" then
+		local id = coll.gameObject.name;
+		print("选中当前NPC:"..id);
+		gamectrl.selectNPC = id;
+		if Vector2.Distance(game.hero.transform.position,coll.gameObject.transform.position)>100 then
+			gamectrl.moveTo(coll.gameObject.transform.position);
+			gamectrl.setNavCallBack("gamectrl.ontalkboxpage");
+			gamectrl.setNavStopDistance(200);
+		else
+			--talkmaneger.onNpcTalk();
+			gamectrl.movestop();
+			NPCTalkPage.Open();
+		end
+		--self.gameObject.transform.position =  self.gameObject.transform.position + Vector3(100,100,0);
+	elseif coll.gameObject.tag == "chest" then
+		local id = coll.gameObject.name;
+		print("选中当前宝箱:"..id);
+		gamectrl.selectchest = id;
+		if Vector2.Distance(game.hero.transform.position,coll.gameObject.transform.position)>100 then
+			gamectrl.moveTo(coll.gameObject.transform.position);
+			gamectrl.setNavCallBack("gamectrl.onOpenchest");
+			gamectrl.setNavStopDistance(200);
+		else
+			gamectrl.movestop();
+			gamectrl.onOpenchest();
+		end
+	elseif coll.gameObject.tag == "collection" then
+		local id = coll.gameObject.name;
+		print("选中当前采集物:"..id);
+		gamectrl.selectcollection = id;
+		if Vector2.Distance(game.hero.transform.position,coll.gameObject.transform.position)>100 then
+			gamectrl.moveTo(coll.gameObject.transform.position);
+			gamectrl.setNavCallBack("gamectrl.onOpencollection");
+			gamectrl.setNavStopDistance(200);
+		else
+			gamectrl.movestop();
+			gamectrl.onOpencollection();
+		end
+	elseif coll.gameObject.tag == "resetTime" then
+		local id = coll.gameObject.name;
+		gamectrl.selectcollection = id;
+		if Vector2.Distance(game.hero.transform.position,coll.gameObject.transform.position)>100 then
+			gamectrl.moveTo(coll.gameObject.transform.position);
+			gamectrl.setNavCallBack("gamectrl.onOpenResetTime");
+			gamectrl.setNavStopDistance(200);
+		else
+			gamectrl.movestop();
+			gamectrl.onOpenResetTime();
+		end
+	end
+end
+
+function gamectrl.OnTalkKeyEvent()
+	if UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.Space) then
+		--检查NPC 
+		local Raycast = Game.GetGame():GetRayEx(game.hero.transform.position, gamectrl.Dir, 200, 9);
+		if Raycast~=nil and Raycast.collider~=nil then
+			gamectrl.OnTalkEvent(Raycast.collider)
+			return;
+		end
+		--检查宝箱
+		Raycast = Game.GetGame():GetRayEx(game.hero.transform.position, gamectrl.Dir, 200, 11);
+		if Raycast~=nil and Raycast.collider~=nil then
+			gamectrl.OnTalkEvent(Raycast.collider)
+			return;
+		end
+		--检查采集物
+		Raycast = Game.GetGame():GetRayEx(game.hero.transform.position, gamectrl.Dir, 200, 12);
+		if Raycast~=nil and Raycast.collider~=nil then
+			gamectrl.OnTalkEvent(Raycast.collider)
+			return;
+		end
+		--检查休息触发点
+		Raycast = Game.GetGame():GetRayEx(game.hero.transform.position, gamectrl.Dir, 200, 13);
+		if Raycast~=nil and Raycast.collider~=nil then
+			gamectrl.OnTalkEvent(Raycast.collider)
+			return;
+		end
+	end
+end
+
+
+
+
+

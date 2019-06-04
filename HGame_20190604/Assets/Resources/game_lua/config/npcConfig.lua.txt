@@ -1,0 +1,10 @@
+﻿--npc列表，场景上NPC的基本信息
+npcSceneList = {
+	{id = 101,name = "丽莎",modal = "Role_2",Pos = {{quest=0,time=0,scene = "scene_3",pos_x=-1943,pos_y=601};{quest=101,time=0,scene = "scene_1",pos_x=-519,pos_y=348}}};
+	{id = 102,name = "爱伦",modal = "Role_3",Pos = {{quest=0,time=0,scene = "scene_1",pos_x=608,pos_y=268}}};
+}
+
+
+
+
+

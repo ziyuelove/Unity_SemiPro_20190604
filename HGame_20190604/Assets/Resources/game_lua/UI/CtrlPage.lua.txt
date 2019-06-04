@@ -1,0 +1,63 @@
+--Author : Administrator
+--Date   : 2018/11/20
+
+--声明，这里声明了类名还有属性，并且给出了属性的初始值。
+CtrlPage = {}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+CtrlPage.__index = CtrlPage
+CtrlPage.gameobect = nil
+
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function CtrlPage:New() 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, CtrlPage);  --将self的元表设定为Class
+    return self;    --返回自身
+end
+
+--开始时调用
+function CtrlPage:Start(gameobject) 
+	self.gameObject = gameobject;
+	self:Init();
+	self.gameObject.transform.localScale = Vector3.New(1,1,1);
+	self.gameObject.transform.localPosition = Vector3.New(0,0,0);
+end
+
+function CtrlPage.OnJump(gameobject)
+	--heroctrl.OnJump()
+	--Game.GetGame():AddScene("scene_1");
+	--local QuestNum = questmaneger.getQuestNum();
+	--questmaneger.add(QuestNum+1);
+	local RayNpc = Game.GetGame():GetRayEx(heroctrl.GetHeroCollider().position,heroctrl.lookdir,0.4,9);
+	if RayNpc.collider ~= nil then
+		local NPCName = RayNpc.collider.gameObject.name;
+		print("对话NPC："..NPCName);
+	end
+	return gameobject;
+end
+
+function CtrlPage.OnAtk(gameobject)
+	--heroctrl.OnAtk()
+	--Game.GetGame():DelScene("scene_1");
+	questmaneger.showQuest();
+	return gameobject;
+end
+
+
+function CtrlPage:Init()
+	local Btn_Jump = self.gameObject.transform:Find("ctrlBtns/jump") 
+	local Btn_Atk = self.gameObject.transform:Find("ctrlBtns/shoot") 
+
+	EventTriggerListener.Get(Btn_Jump.gameObject).OnClickCall = "CtrlPage.OnJump";
+	EventTriggerListener.Get(Btn_Atk.gameObject).OnClickCall = "CtrlPage.OnAtk";
+end
+
+function CtrlPage:Update()
+	--Debug.Log(m_gameObject.name.."	Update")
+	--self.gameObject.transform.localPosition = Vector3.New(0,0,0);
+end
+
+
+return CtrlPage
+--endregion

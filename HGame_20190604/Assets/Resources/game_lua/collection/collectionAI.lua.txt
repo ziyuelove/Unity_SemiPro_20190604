@@ -1,0 +1,57 @@
+﻿
+--角色基础控制逻辑 
+collectionAI = {}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+collectionAI.__index = collectionAI
+collectionAI.gameobect = nil
+
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function collectionAI:New() 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, collectionAI);  --将self的元表设定为Class
+    return self;    --返回自身
+end
+
+function collectionAI:LuaInit(LuaTable)
+	self.LuaTable = LuaTable;
+end
+
+--开始时调用
+function collectionAI:Start(gameobject) 
+	self.gameObject = gameobject;
+	collectionmaneger.AddCollection(self.gameObject.name,self.LuaTable)
+end
+
+function collectionAI:Update(gameobject)
+
+end
+
+function collectionAI:Open()
+	--设置定时器
+	self.gameObject:GetComponent('LuaComponent'):OnTimer("OnGive",1.5);
+	collectionmaneger.collectionId = self.gameObject.name
+	collectionmaneger.collectionTime = 1.5;
+	game.OpenUI("UI/collectionPage");
+end
+
+function collectionAI:OnGive()
+	local id = tonumber(self.gameObject.name);
+	local Collectiondata = collectionmaneger.FindCollectionConfigData(id);
+	for key, chestGives in pairs(Collectiondata.GiveList) do 
+		for i=1,chestGives.num do
+			itemmaneger.addItem(chestGives.id);
+		end
+		GetItemPage.Additem(chestGives.id,chestGives.num)
+	end
+	GetItemPage.StartShow();
+	self.gameObject:SetActive(false);
+end
+
+return collectionAI
+
+
+
+
+

@@ -1,0 +1,79 @@
+--Author : Administrator
+--Date   : 2018/11/20
+
+--声明，这里声明了类名还有属性，并且给出了属性的初始值。
+MainUI = {}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+MainUI.__index = MainUI
+MainUI.gameobect = nil
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function MainUI:New() 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, MainUI);  --将self的元表设定为Class
+    return self;    --返回自身
+end
+
+function MainUI:LuaInit(LuaTable)
+	self.LuaTable = LuaTable;
+end
+
+--开始时调用
+function MainUI:Start(gameobject) 
+	self.gameobect = gameobject;
+	self.gameobect.transform.localScale = Vector3.New(1,1,1);
+	self.gameobect.transform.localPosition = Vector3.New(0,0,0);
+
+	game.MainUI = self;
+
+	local Btn_role = self.gameobect.transform:Find("rightBtn/btn_role") 
+	local Btn_item = self.gameobect.transform:Find("rightBtn/btn_item") 
+	local Btn_npc = self.gameobect.transform:Find("rightBtn/btn_npc");
+
+	self.GameTimeLabel = self.gameobect.transform:Find("topright/gametime/Text"):GetComponent("Text");
+
+
+	self.GameFuncPanel = self.gameobect.transform:Find("rightBtn") 
+
+	EventTriggerListener.Get(Btn_role.gameObject).OnClickCall = "OnOpenRole";
+	EventTriggerListener.Get(Btn_role.gameObject):OnSetLuaTable(self.LuaTable);
+
+	EventTriggerListener.Get(Btn_item.gameObject).OnClickCall = "OnOpenItem";
+	EventTriggerListener.Get(Btn_item.gameObject):OnSetLuaTable(self.LuaTable);
+
+	EventTriggerListener.Get(Btn_npc.gameObject).OnClickCall = "OnOpenNPC";
+	EventTriggerListener.Get(Btn_npc.gameObject):OnSetLuaTable(self.LuaTable);
+
+
+	self.GameTimeLabel.text = GameTimeManeger.GetCurTimeName();
+
+	return gameobject;
+end
+
+function MainUI:OnOpenRole(gameobject)
+
+	return gameobject;
+end
+
+function MainUI:RefreshGameTime()
+	self.GameTimeLabel.text = GameTimeManeger.GetCurTimeName();
+end
+
+
+function MainUI:OnOpenItem(gameobject)
+	game.OpenUI("UI/ItemPage");
+	return gameobject;
+end
+
+function MainUI:OnOpenNPC(gameobject)
+	game.OpenUI("UI/NPCInfo");
+	return gameobject;	
+end
+
+function MainUI:Update()
+end
+
+return MainUI
+
+--endregion

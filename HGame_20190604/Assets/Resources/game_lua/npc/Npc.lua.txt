@@ -1,0 +1,48 @@
+--Author : Administrator
+--Date   : 2014/11/25
+
+--声明，这里声明了类名还有属性，并且给出了属性的初始值。
+--这是一个建筑的对象，包含基本的显示和位置信息
+NPC= {id = "0000-0000-0000-00000",type = 0,position = Vector2.zero,gameObject}
+
+--这句是重定义元表的索引，就是说有了这句，这个才是一个类。
+NPC.__index = NPC
+
+--构造体，构造体的名字是随便起的，习惯性改为New()
+function NPC:New(id) 
+    local self = {};    --初始化self，如果没有这句，那么类所建立的对象改变，其他对象都会改变
+    setmetatable(self, NPC);  --将self的元表设定为Class
+    self.id = id;
+	self.bInit = false;
+	self.bOut = false;
+    return self;    --返回自身
+end
+
+function NPC:Init()
+	print("==============================:"..self.id);
+	self.npcData = sceneNpcManager.GetNpcConfigData(self.id);
+	if self.npcData ~= nil then
+		local npcRes = ResourceManager.GetInstance():Load("Prefab/npc/"..self.npcData.modal);
+		local npc = UnityEngine.GameObject.Instantiate(npcRes);
+		npc.name = self.id
+		self.gameObject = npc;
+		self:SetPosition(Vector2.New(self.Startpos.pos_x,self.Startpos.pos_y));
+	else
+		print("没有找到配置数据:"..self.id);
+	end
+end
+
+function NPC:Delete()
+	UnityEngine.GameObject.Destroy(self.gameObject);
+end
+
+function NPC:SetStartPosition(posdata)
+	self.Startpos = posdata;
+	print("设置坐标:"..self.Startpos.pos_x.."    "..self.Startpos.pos_y);
+end
+
+function NPC:SetPosition(pos)
+	self.gameObject.transform.position = pos
+end
+
+--endregion
