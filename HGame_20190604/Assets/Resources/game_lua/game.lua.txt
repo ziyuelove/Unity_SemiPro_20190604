@@ -83,17 +83,7 @@ end
 
 --游戏循环
 function game.Update()
-	--if game.hero ~= nil then
-	--	heroctrl.Update();
-	--end
-	--game.CameraFollow();
-	--sceneNpcManager.update();
-
 	gamectrl.update();
-	--if not gamectrl.Editor then
-	--	sceneBuildManager.Update();
-	--	sceneNpcManager.update();
-	--end
 end
 
 function game.CameraFollow()
