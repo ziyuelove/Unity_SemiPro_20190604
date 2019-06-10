@@ -30,7 +30,7 @@ function game.OnLevelWasLoaded(level)
 		game.gamestate = 1;
 		game.ToChangeRgn = false;
 	elseif game.gamestate == 1 or game.gamestate == 2 then
-		game.gamestate = 2;    --已进入游戏场景
+		game.gamestate = 2;    --已进入游戏场景yi
 		game.sceneinit();
 	else
 		
